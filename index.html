@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClubGG Cheat: Абсолютное Преимущество | Видеть Все Карты</title>
+    <meta name="description" content="Получите абсолютное преимущество в ClubGG. ClubGG Cheat - это инструмент, который позволяет видеть карты ваших оппонентов. Незаметный, безопасный и простой в использовании. Начните выигрывать больше уже сегодня.">
+    <meta name="keywords" content="clubgg чит, чит для clubgg, взлом покера, онлайн покер, инструмент для покера, видеть карты в clubgg, чит для покера, инструмент для покера, приложение для выигрыша в покер, как выигрывать в clubgg, чит для покера на андроид, чит для покера на ios, помощник в покере, предсказатель в покере">
+    
+    <!-- New SVG Favicon -->
+    <link id="favicon" rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><linearGradient id=%22g%22 x1=%220%25%22 y1=%220%25%22 x2=%22100%25%22 y2=%22100%25%22><stop offset=%220%25%22 stop-color=%22%2334D399%22 /><stop offset=%22100%25%22 stop-color=%22%23FBBF24%22 /></linearGradient></defs><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22none%22 stroke=%22url(%23g)%22 stroke-width=%2210%22/><text x=%2250%22 y=%2268%22 font-family=%22Inter, sans-serif%22 font-size=%2240%22 font-weight=%22bold%22 fill=%22white%22 text-anchor=%22middle%22>C</text></svg>">
+
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --primary-color: #34D399; /* Emerald Green */
+            --secondary-color: #FBBF24; /* Amber Gold */
+            --background-dark: #0D1117;
+            --background-light: #161B22;
+            --text-light: #E6EDF3;
+            --text-dark: #0D1117;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background-dark);
+            color: var(--text-light);
+        }
+        .cta-button {
+            background: linear-gradient(90deg, var(--primary-color), #6EE7B7);
+            color: var(--text-dark);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: pulse-cta 2.5s infinite;
+        }
+        .cta-button:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 12px 24px rgba(52, 211, 153, 0.3);
+        }
+        .dialog {
+            background-color: rgba(13, 17, 23, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        .dialog-content {
+            background-color: var(--background-light);
+            border: 1px solid #30363d;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 0.75rem;
+            border: 1px solid #30363d;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+        }
+        .video-container:hover {
+            transform: scale(1.03);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            background-color: var(--background-dark);
+        }
+        .spinner {
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 2px solid var(--secondary-color);
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .skiptranslate { display: none !important; }
+        body { top: 0px !important; }
+        #google_translate_element .goog-te-gadget-simple,
+        #google_translate_element_mobile .goog-te-gadget-simple {
+            background-color: var(--background-light) !important;
+            border: 1px solid #30363d !important;
+            border-radius: 8px !important;
+            padding: 0.5rem !important;
+        }
+        #google_translate_element .goog-te-gadget-simple span,
+        #google_translate_element_mobile .goog-te-gadget-simple span {
+            color: var(--text-light) !important;
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1542165255-4e3869f2d398?q=80&w=2070&auto=format&fit=crop');
+        }
+        .feature-card, .testimonial-card, .story-card {
+            background: #161B2299;
+            border: 1px solid #30363d;
+            backdrop-filter: blur(12px);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover, .testimonial-card:hover, .story-card:hover {
+            transform: translateY(-5px);
+            background: #1e242c99;
+            box-shadow: 0 0 25px rgba(52, 211, 153, 0.15);
+        }
+        
+        /* Animation on Scroll */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translate3d(0, 40px, 0); }
+            to { opacity: 1; transform: translate3d(0, 0, 0); }
+        }
+        .fade-in-up { animation: fadeInUp 1s ease-out forwards; }
+        .hero-title { animation-delay: 0.2s; }
+        .hero-tagline { animation-delay: 0.4s; }
+        .hero-cta-container { animation-delay: 0.6s; }
+
+        /* Conversion Styles */
+        @keyframes pulse-cta {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.7); }
+            50% { transform: scale(1.05); box-shadow: 0 0 20px 10px rgba(52, 211, 153, 0); }
+        }
+        .social-proof-notification {
+            transition: opacity 0.5s, transform 0.5s;
+            transform: translateX(-120%);
+        }
+        .social-proof-notification.show {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        .satisfaction-bar-container {
+            background-color: #30363d;
+            border-radius: 9999px;
+            overflow: hidden;
+        }
+        .satisfaction-bar {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            height: 100%;
+            width: 0; /* Set by JS */
+            transition: width 2s ease-out;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_TAG_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YOUR_TAG_ID');
+    </script>
+</head>
+<body class="bg-background-dark text-text-light">
+    <noscript>
+        <div style="background-color: var(--secondary-color); color: var(--text-dark); text-align: center; padding: 1rem; font-weight: bold;">
+            Для полной функциональности этого сайта необходимо включить JavaScript.
+        </div>
+    </noscript>
+
+    <!-- Header -->
+    <header class="bg-background-dark/80 backdrop-blur-sm sticky top-0 z-40 transition-all duration-300" id="main-header">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" onclick="window.location.reload()" class="flex items-center space-x-3 cursor-pointer">
+                        <svg class="h-10 w-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="logoGradientHeader" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#34D399" />
+                                    <stop offset="100%" stop-color="#FBBF24" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="url(#logoGradientHeader)" stroke-width="10"/>
+                            <text x="50" y="68" font-family="Inter, sans-serif" font-size="40" font-weight="bold" fill="white" text-anchor="middle">C</text>
+                        </svg>
+                        <span class="text-2xl font-bold text-text-light">ClubGG Cheat</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex md:space-x-8">
+                    <a href="#features" class="text-gray-300 hover:text-white transition" data-translate="navFeatures"></a>
+                    <a href="#how-it-works" class="text-gray-300 hover:text-white transition" data-translate="navHowItWorks"></a>
+                    <a href="#demo" class="text-gray-300 hover:text-white transition" data-translate="navDemo"></a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white transition" data-translate="navTestimonials"></a>
+                </nav>
+
+                <!-- CTA and Language Selector -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#get-app" class="cta-button font-bold py-2 px-5 rounded-lg" data-translate="navGetApp"></a>
+                    <div id="google_translate_element"></div>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden mobile-menu transform -translate-x-full fixed top-0 left-0 h-full w-64 z-50 p-6 shadow-2xl">
+        <div class="flex justify-between items-center mb-8">
+             <a href="#" onclick="window.location.reload()" class="flex items-center space-x-2 cursor-pointer">
+                 <svg class="h-8 w-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs><linearGradient id="logoGradientMobile" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#34D399" /><stop offset="100%" stop-color="#FBBF24" /></linearGradient></defs>
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#logoGradientMobile)" stroke-width="10"/>
+                    <text x="50" y="68" font-family="Inter, sans-serif" font-size="40" font-weight="bold" fill="white" text-anchor="middle">C</text>
+                </svg>
+                <span class="text-xl font-bold text-text-light">ClubGG Cheat</span>
+            </a>
+            <button id="mobile-menu-close" class="text-gray-300 hover:text-white">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+        </div>
+        <nav class="flex flex-col space-y-4">
+            <a href="#features" class="text-gray-300 hover:text-white transition" data-translate="navFeatures"></a>
+            <a href="#how-it-works" class="text-gray-300 hover:text-white transition" data-translate="navHowItWorks"></a>
+            <a href="#demo" class="text-gray-300 hover:text-white transition" data-translate="navDemo"></a>
+            <a href="#story" class="text-gray-300 hover:text-white transition" data-translate="navStory"></a>
+            <a href="#testimonials" class="text-gray-300 hover:text-white transition" data-translate="navTestimonials"></a>
+            <a href="#get-app" class="cta-button text-center font-bold py-2 px-5 rounded-lg mt-4" data-translate="navGetApp"></a>
+            <div class="mt-4 space-y-4">
+                <div id="google_translate_element_mobile"></div>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div id="main-content">
+            <!-- Hero Section -->
+            <section class="hero relative py-20 md:py-32 text-center text-white overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center bg-no-repeat hero-bg"></div>
+                <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+                    <div id="personalization-banner" class="mb-4 text-secondary-color font-semibold"></div>
+                    <h1 class="text-4xl md:text-6xl font-extrabold mb-4 fade-in-up hero-title" data-translate="heroTitle"></h1>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 fade-in-up hero-tagline" data-translate="heroTagline"></p>
+                    <div class="fade-in-up hero-cta-container">
+                        <a href="#get-app" class="cta-button text-lg font-bold py-4 px-8 rounded-lg" data-translate="heroCta"></a>
+                        <p class="mt-4 text-secondary-color font-semibold">
+                            <span data-translate="licensesLeftText"></span> <strong id="slots-left-hero" class="text-xl">12</strong>.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Social Proof / Counters -->
+            <section class="bg-background-light/50 py-8">
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                        <div class="animate-on-scroll">
+                            <p class="text-4xl font-bold text-primary-color" id="counter-players">+1,200</p>
+                            <p class="text-gray-400" data-translate="counterPlayers"></p>
+                        </div>
+                         <div class="animate-on-scroll" style="transition-delay: 0.2s;">
+                            <p class="text-4xl font-bold text-primary-color" id="counter-winnings">$150K+</p>
+                            <p class="text-gray-400" data-translate="counterWinnings"></p>
+                        </div>
+                         <div class="animate-on-scroll" style="transition-delay: 0.4s;">
+                            <p class="text-4xl font-bold text-primary-color" id="counter-satisfaction">98.7%</p>
+                            <p class="text-gray-400 mb-2" data-translate="counterSatisfaction"></p>
+                            <div class="satisfaction-bar-container h-2 w-32 mx-auto">
+                                <div id="satisfaction-bar-element" class="satisfaction-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section id="features" class="py-16 md:py-24 bg-background-dark">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-on-scroll" data-translate="featuresTitle"></h2>
+                    <div id="features-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Feature Cards will be injected by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- How It Works Section -->
+            <section id="how-it-works" class="py-16 md:py-24 bg-background-light/50">
+                 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-on-scroll" data-translate="howItWorksTitle"></h2>
+                    <div id="how-it-works-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                        <!-- Steps will be injected by JS -->
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Mid-page CTA -->
+            <section class="py-16 bg-background-dark text-center">
+                <div class="container mx-auto px-4 animate-on-scroll">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-6" data-translate="midCtaTitle"></h3>
+                    <a href="#get-app" class="cta-button text-lg font-bold py-4 px-8 rounded-lg" data-translate="midCtaButton"></a>
+                    <p class="mt-4 text-secondary-color font-semibold">
+                        <span data-translate="licensesLeftText"></span> <strong id="slots-left-mid" class="text-xl">12</strong>.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Demo Section -->
+            <section id="demo" class="py-16 md:py-24 bg-background-light/50">
+                 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 animate-on-scroll" data-translate="demoTitle"></h2>
+                    <p class="text-lg text-gray-400 text-center max-w-2xl mx-auto mb-12 animate-on-scroll" data-translate="demoText"></p>
+                    
+                    <div class="max-w-4xl mx-auto animate-on-scroll">
+                        <div class="video-container">
+                            <iframe loading="lazy" src="https://www.youtube.com/embed/dUW9mVVhJ-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Our Story Section -->
+            <section id="story" class="py-16 md:py-24 bg-background-dark">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="animate-on-scroll">
+                        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-translate="storyTitle"></h2>
+                        <div id="story-container" class="max-w-4xl mx-auto story-card text-center">
+                                 <!-- Story content injected by JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section id="testimonials" class="py-16 md:py-24 bg-background-light/50">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                     <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-on-scroll" data-translate="testimonialsTitle"></h2>
+                    <div id="testimonials-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Testimonials will be loaded dynamically -->
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Get App Section -->
+            <section id="get-app" class="py-16 md:py-24 text-center bg-background-dark">
+                 <div class="container mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4" data-translate="getAppTitle"></h2>
+                    <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-8" data-translate="getAppText"></p>
+                    
+                    <div class="my-6">
+                        <div id="urgency-text-container" class="text-xl font-semibold text-red-500 animate-pulse">
+                            <span data-translate="urgencyText"></span> <strong id="slots-left-main" class="text-xl">12</strong> <span data-translate="urgencyText2"></span>
+                        </div>
+                    </div>
+                    
+                    <button class="main-cta-button text-lg sm:text-xl font-bold py-4 px-6 sm:px-10 rounded-lg cta-button w-full sm:w-auto" id="start-purchase-btn" data-translate="getAppButton"></button>
+                    
+                    <div class="flex justify-center items-center flex-wrap gap-x-4 gap-y-4 md:gap-x-8 mt-8 text-gray-400">
+                        <div class="flex flex-col items-center space-y-2">
+                            <i class="fas fa-shield-alt text-3xl text-primary-color"></i>
+                            <span class="text-xs font-bold" data-translate="secureBadge"></span>
+                        </div>
+                        <div class="flex flex-col items-center space-y-2">
+                            <i class="fas fa-thumbs-up text-3xl text-primary-color"></i>
+                            <span class="text-xs" data-translate="satisfactionGuaranteeBadge"></span>
+                        </div>
+                        <div class="flex flex-col items-center space-y-2">
+                            <i class="fas fa-lock text-3xl text-primary-color"></i>
+                            <span class="text-xs" data-translate="dataPrivacyBadge"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact py-16 md:py-24 text-center bg-background-light/50" id="contact">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl animate-on-scroll">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4" data-translate="contactTitle"></h2>
+                    <p class="text-lg text-gray-400 mb-8" data-translate="contactText"></p>
+                    <div class="flex flex-col items-center justify-center gap-6">
+                        <!-- Main CTA for Telegram -->
+                        <a href="https://t.me/bedmalcon_temp" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-8 rounded-lg transition-transform duration-300 hover:scale-105">
+                            <i class="fab fa-telegram-plane mr-2"></i>
+                            <span data-translate="contactTelegram"></span> <span class="text-xs opacity-80">(24/7)</span>
+                        </a>
+                         <!-- Secondary contacts -->
+                        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-gray-400 mt-4">
+                             <a href="mailto:support@revealpoker.top" class="hover:text-white transition flex items-center gap-2">
+                                 <i class="fas fa-envelope"></i>
+                                 <span>support@revealpoker.top</span>
+                             </a>
+                             <a href="https://www.instagram.com/hackpoker_updated" target="_blank" class="hover:text-white transition flex items-center gap-2">
+                                 <i class="fab fa-instagram"></i>
+                                 <span>@hackpoker_updated</span>
+                             </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="payment-confirmation-content" class="hidden">
+             <!-- This div will be populated by JS for the final confirmation step -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-background-dark border-t border-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <!-- About -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4" data-translate="footerAboutTitle"></h3>
+                    <p class="text-gray-400" data-translate="footerAboutText"></p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4" data-translate="footerLinksTitle"></h3>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white" data-translate="footerLinkFeatures"></a></li>
+                        <li><a href="#how-it-works" class="text-gray-400 hover:text-white" data-translate="footerLinkHowItWorks"></a></li>
+                        <li><a href="#get-app" class="text-gray-400 hover:text-white" data-translate="footerLinkPricing"></a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white" data-translate="footerLinkContact"></a></li>
+                    </ul>
+                </div>
+                <!-- Connect -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4" data-translate="footerConnectTitle"></h3>
+                    <div class="space-y-3">
+                        <a href="https://t.me/bedmalcon_temp" target="_blank" class="inline-flex items-center justify-center md:justify-start text-gray-400 hover:text-white transition">
+                            <i class="fab fa-telegram w-6 text-center"></i>
+                            <span class="ml-2">Telegram</span> <span class="text-xs opacity-80">(24/7)</span>
+                        </a>
+                        <a href="https://www.instagram.com/hackpoker_updated" target="_blank" class="inline-flex items-center justify-center md:justify-start text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram w-6 text-center"></i>
+                            <span class="ml-2">@hackpoker_updated</span>
+                        </a>
+                        <a href="mailto:support@revealpoker.top" class="inline-flex items-center justify-center md:justify-start text-gray-400 hover:text-white transition">
+                            <i class="fas fa-envelope w-6 text-center"></i>
+                            <span class="ml-2">support@revealpoker.top</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>&copy; <span id="current-year"></span> ClubGG Cheat. <span data-translate="footerRights"></span></p>
+                <p class="text-sm mt-2" data-translate="footerDisclaimer"></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Floating Chat Widget -->
+    <a href="https://t.me/bedmalcon_temp" target="_blank" class="fixed bottom-5 right-5 bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center text-white shadow-lg z-40 transform hover:scale-110 transition-transform">
+        <i class="fab fa-telegram-plane text-3xl"></i>
+    </a>
+
+    <!-- Social Proof Notification -->
+    <div id="social-proof-container" class="fixed bottom-5 left-5 z-50 overflow-hidden">
+        <!-- Notifications will be injected here -->
+    </div>
+
+    <!-- Dialogs / Modals -->
+    <div id="dialog-container" class="fixed inset-0 z-60 flex items-center justify-center p-4 hidden dialog">
+        <!-- Dialog content will be injected here -->
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+    <script>
+    // --- Translations Object ---
+    const translations = {
+        ru: {
+            navFeatures: "Возможности",
+            navHowItWorks: "Как это работает",
+            navDemo: "Демо",
+            navStory: "Наша история",
+            navTestimonials: "Отзывы",
+            navGetApp: "Получить преимущество",
+            heroTitle: "Доминируйте в ClubGG. Видьте карты оппонентов и максимизируйте свой выигрыш.",
+            heroTagline: "Пока другие полагаются на удачу, вы играете с полной информацией. Присоединяйтесь к игрокам, которые уже сейчас зарабатывают в ClubGG. Почему не вы?",
+            heroCta: "Активировать мое преимущество в ClubGG",
+            counterPlayers: "Активных игроков в ClubGG",
+            counterWinnings: "Выигрыши за неделю в ClubGG",
+            counterSatisfaction: "Уровень удовлетворенности",
+            featuresTitle: "Абсолютное преимущество для ClubGG",
+            feature1Title: "Полный обзор рук",
+            feature1Text: "Знайте точно, что у ваших оппонентов. Превратите неопределенность в прибыль и принимайте уверенные, выигрышные решения в ClubGG.",
+            feature2Title: "100% фокус на ClubGG",
+            feature2Text: "Разработано исключительно для ClubGG, безупречно работает как внешний помощник на Android и iOS.",
+            feature3Title: "Полностью незаметно",
+            feature3Text: "Играйте с нулевым риском. Наша передовая технология гарантирует, что ваше преимущество останется в секрете, а ваш аккаунт — в безопасности.",
+            feature4Title: "Экспоненциальная прибыль",
+            feature4Text: "Превратите каждую сессию в победу. С полной информацией вы всегда будете делать идеальный ход для максимизации своей прибыли.",
+            feature5Title: "Всегда впереди",
+            feature5Text: "Будьте на шаг впереди благодаря постоянным обновлениям, которые адаптируются к изменениям в ClubGG, гарантируя, что ваше преимущество никогда не будет потеряно.",
+            feature6Title: "VIP-поддержка 24/7",
+            feature6Text: "Получите приоритетную помощь от нашей команды экспертов менее чем за 5 минут через Telegram. Ваш успех — наша цель.",
+            howItWorksTitle: "3 простых шага к победе",
+            step1Title: "Приобретите доступ",
+            step1Text: "Нажмите «Получить преимущество» и обеспечьте себе эксклюзивный доступ к ClubGG Cheat.",
+            step2Title: "Получите ваш уникальный ID",
+            step2Text: "После подтверждения вы получите личный и безопасный ID для активации инструмента.",
+            step3Title: "Активируйте и доминируйте",
+            step3Text: "Следуйте простым инструкциям для активации и начните видеть карты ваших оппонентов мгновенно!",
+            demoTitle: "Посмотрите ClubGG Cheat в действии",
+            demoText: "Посмотрите нашу демонстрацию, чтобы понять, как ClubGG Cheat дает вам абсолютное преимущество.",
+            storyTitle: "Наша история: как мы взломали код ClubGG",
+            storyText: "После серии разочаровывающих поражений мы решили глубоко изучить ClubGG. Месяцы исследований выявили критические уязвимости. Так, в 2023 году родился <strong>ClubGG Cheat</strong>, инструмент для выравнивания игрового поля, раскрывающий карты оппонентов и возвращающий вам власть.",
+            storyCallToAction: "Это не просто инструмент, это ваш шанс переломить игру. Игроки по всему миру уже используют это преимущество. <strong>Действуйте сейчас, каждая рука, сыгранная без приложения, — это упущенные деньги!</strong>",
+            testimonialsTitle: "Что говорят наши чемпионы",
+            testimonial1Quote: "ClubGG Cheat — это безумие. Мой винрейт вырос с 20% до почти 85%. Это как играть с суперсилой.",
+            testimonial1Author: "Александр В., Москва",
+            testimonial2Quote: "Я был настроен скептически, но это работает идеально. Легко установить, и поддержка была очень быстрой. Я окупил вложения за 2 дня.",
+            testimonial2Author: "Екатерина С., Санкт-Петербург",
+            testimonial3Quote: "Если вы серьезно играете в ClubGG, вам это нужно. Все просто: либо у вас есть преимущество, либо вы в невыгодном положении.",
+            testimonial3Author: "Дмитрий П., Новосибирск",
+            getAppTitle: "Активируйте свое преимущество в ClubGG сейчас",
+            getAppText: "Каждая рука, которую вы играете без ClubGG Cheat, — это упущенная возможность. Пора инвестировать в свой успех.",
+            urgencyText: "⚠️ Осталось только",
+            urgencyText2: "лицензий по акционной цене.",
+            getAppButton: "Да, я хочу больше выигрывать в ClubGG",
+            secureBadge: "100% безопасно и незаметно",
+            satisfactionGuaranteeBadge: "Гарантия удовлетворенности",
+            dataPrivacyBadge: "Конфиденциальность данных",
+            contactTitle: "Свяжитесь с нами",
+            contactText: "Есть вопросы или нужна помощь? Наша служба поддержки готова помочь вам начать работу с ClubGG Cheat.",
+            contactTelegram: "Связаться в Telegram",
+            footerAboutTitle: "О ClubGG Cheat",
+            footerAboutText: "ClubGG Cheat предоставляет стратегическое преимущество, позволяя видеть карты оппонентов. Играйте умнее, выигрывайте больше.",
+            footerLinksTitle: "Быстрые ссылки",
+            footerLinkFeatures: "Возможности",
+            footerLinkHowItWorks: "Как это работает",
+            footerLinkPricing: "Цены",
+            footerLinkContact: "Контакты",
+            footerConnectTitle: "Свяжитесь с нами",
+            footerRights: "Все права защищены.",
+            footerDisclaimer: "Отказ от ответственности: этот инструмент является внешним помощником. Используйте его ответственно и ознакомьтесь с условиями обслуживания ClubGG.",
+            
+            stickyBarTextActive: "🔥 Специальное предложение <strong>10OFF</strong> истекает через:",
+            stickyBarTextExpired: "Основное предложение истекло! Получите <strong>5% скидку</strong> прямо сейчас!",
+            exitIntentTitle: "Подождите! Прежде чем уйти...",
+            exitIntentText: "⚠️ Это ваш единственный шанс. Используйте купон <strong>10OFF</strong>, чтобы получить 10% скидку на ваше преимущество прямо сейчас.",
+            exitIntentButton: "Применить скидку и продолжить",
+            socialProofAcquired: "🎉 {NAME} из {LOCATION} только что активировал ClubGG Cheat!",
+            midCtaTitle: "Готовы доминировать за столами ClubGG?",
+            midCtaButton: "Да, я хочу получить свое преимущество сейчас!",
+            licensesLeftText: "Только",
+            personalizationBanner: "Специальное предложение для игроков из {COUNTRY} {FLAG}",
+            timedPopupTitle: "🎯 Только что появились дополнительные места!",
+            timedPopupText: "На ограниченное время мы открыли несколько дополнительных мест. Обеспечьте себе преимущество, пока они снова не закончились!",
+            timedPopupButton: "Занять мое место сейчас",
+            
+            registerTitle: "Зарегистрируйтесь, чтобы продолжить",
+            emailLabel: "Адрес электронной почты",
+            emailPlaceholder: "vash.email@example.com",
+            usernameLabel: "Имя пользователя",
+            usernamePlaceholder: "Выберите имя пользователя",
+            registerButton: "Зарегистрироваться и продолжить",
+            emailValidationError: "Пожалуйста, введите действительный адрес электронной почты.",
+            usernameValidationError: "Имя пользователя должно содержать не менее 3 символов.",
+            platformDialogTitle: "Выберите ваше устройство",
+            platformDialogText: "Выберите платформу, на которой вы играете в ClubGG:",
+            platformAndroid: "Android",
+            platformIOS: "iOS",
+            uniqueIdDialogTitle: "Ваш уникальный ID",
+            uniqueIdDialogText: "Это ваш уникальный ID. Сохраните его, он понадобится для активации:",
+            copyIdButton: "Скопировать ID",
+            copiedText: "Скопировано!",
+            continueButton: "Продолжить",
+            
+            couponDialogTitle: "Детали покупки",
+            couponDialogText: "Если у вас есть купон на скидку, введите его ниже.",
+            couponPlaceholder: "Введите код купона",
+            paymentMethodDialogTitle: "Выберите способ оплаты",
+            paymentMethodDialogText: "Выберите предпочтительный способ оплаты:",
+            applyCouponButton: "Применить",
+            proceedButton: "Перейти к оплате",
+            loadingPaymentText: "Получение курса...",
+            paymentInstructionsTitle: "Завершите безопасный платеж",
+            paymentInstructionsText: "Пожалуйста, завершите платеж в ближайшее время, чтобы гарантировать ваш доступ. Отправьте точную сумму на указанный ниже кошелек. Без банков, без следов — вы контролируете ситуацию.",
+            paymentInstructionsSecurity: "Платеж на 100% децентрализован через блокчейн. Если активация не удастся, ваш платеж будет возвращен. Мы даем гарантию.",
+            amountToSendLabel: "Сумма к отправке:",
+            cryptoAmountLabel: "В {CRYPTO}:",
+            networkLabel: "Сеть:",
+            copyAddressButton: "Скопировать адрес",
+            alertCopied: "Адрес скопирован!",
+            paymentDoneButton: "Я произвел оплату",
+            couponErrorInvalid: "Неверный или просроченный купон.",
+            couponAppliedSuccess: "Купон '{COUPON_CODE}' применен! Вы получили {DISCOUNT}% скидку.",
+            amountTextBase: "Сумма: {PRICE}",
+            originalAmountLabel: "Начальная",
+            paymentDialogTitleFinal: "Завершите ваш платеж",
+            
+            telegramInstructionsTitle: "Отправьте ваш ID администратору в Telegram",
+            telegramInstructionsText: "Для завершения активации скопируйте ваш уникальный ID ниже и отправьте его нашему администратору в Telegram:",
+            telegramStep1Title: "1. Скопируйте ваш уникальный ID",
+            telegramStep1Desc: "Нажмите кнопку «Скопировать ID» выше.",
+            telegramStep2Title: "2. Откройте Telegram",
+            telegramStep2Desc: "Нажмите кнопку ниже, чтобы связаться с нашим администратором.",
+            telegramStep3Title: "3. Отправьте ваш ID",
+            telegramStep3Desc: "Вставьте ваш ID в чат, чтобы получить инструкции по активации.",
+            openTelegramButton: "Открыть Telegram",
+        }
+    };
+    
+    // --- Localized Social Proof Data ---
+    const socialProofData = {
+      "ru": { names: ["Александр","Дмитрий","Сергей", "Елена"], cities:["Москва","Санкт-Петербург", "Новосибирск", "Екатеринбург"], flag: "🇷🇺", country: "России" }
+    };
+
+    const langToCountryMap = {
+        'ru': { country: 'России', flag: '🇷🇺' },
+        'en': { country: 'the USA', flag: '🇺🇸' },
+    };
+
+
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'ru', includedLanguages: 'en,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+      new google.translate.TranslateElement({pageLanguage: 'ru', includedLanguages: 'en,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element_mobile');
+    }
+
+    // --- Core Application Logic ---
+    document.addEventListener('DOMContentLoaded', () => {
+        const App = {
+            // --- STATE ---
+            purchaseState: {
+                basePrice: 2000, // Hardcoded for ClubGG
+                discount: 0,
+                finalPrice: 0,
+                email: null,
+                username: null,
+                platform: null,
+                uniqueId: null,
+                app: 'ClubGG', // Hardcoded
+                method: null,
+            },
+            
+            // --- URGENCY & SCARCITY STATE ---
+            urgencyState: {
+                slotsLeft: 12,
+                paymentCountdownInterval: null,
+                socialProofTimeout: null,
+                exitIntentTriggered: false,
+            },
+
+            // --- DOM ELEMENTS ---
+            dom: {
+                currentYear: document.getElementById('current-year'),
+                featuresGrid: document.getElementById('features-grid'),
+                howItWorksGrid: document.getElementById('how-it-works-grid'),
+                storyContainer: document.getElementById('story-container'),
+                testimonialsContainer: document.getElementById('testimonials-container'),
+                mobileMenu: document.getElementById('mobile-menu'),
+                mobileMenuButton: document.getElementById('mobile-menu-button'),
+                mobileMenuClose: document.getElementById('mobile-menu-close'),
+                dialogContainer: document.getElementById('dialog-container'),
+                mainContent: document.getElementById('main-content'),
+                paymentConfirmationContent: document.getElementById('payment-confirmation-content'),
+                startPurchaseBtn: document.getElementById('start-purchase-btn'),
+                counterPlayers: document.getElementById('counter-players'),
+                counterWinnings: document.getElementById('counter-winnings'),
+                counterSatisfaction: document.getElementById('counter-satisfaction'),
+                satisfactionBar: document.getElementById('satisfaction-bar-element'),
+                slotsLeftHero: document.getElementById('slots-left-hero'),
+                slotsLeftMid: document.getElementById('slots-left-mid'),
+                slotsLeftMain: document.getElementById('slots-left-main'),
+                socialProofContainer: document.getElementById('social-proof-container'),
+                personalizationBanner: document.getElementById('personalization-banner'),
+                urgencyTextContainer: document.getElementById('urgency-text-container'),
+            },
+
+            // --- METHODS ---
+            
+            init() {
+                this.dom.currentYear.textContent = new Date().getFullYear();
+                this.initLanguage();
+                this.initEventListeners();
+                this.initStaticCounters();
+                this.updateLiveCounters();
+                this.initScrollAnimations();
+                this.initUrgencyFeatures();
+                setInterval(() => this.updateLiveCounters(), 10000);
+            },
+            
+            initEventListeners() {
+                this.dom.mobileMenuButton.addEventListener('click', () => this.dom.mobileMenu.classList.replace('-translate-x-full', 'translate-x-0'));
+                this.dom.mobileMenuClose.addEventListener('click', () => this.dom.mobileMenu.classList.replace('translate-x-0', '-translate-x-full'));
+                document.querySelectorAll('#mobile-menu a').forEach(link => {
+                    link.addEventListener('click', () => this.dom.mobileMenu.classList.replace('translate-x-0', '-translate-x-full'));
+                });
+                this.dom.dialogContainer.addEventListener('click', (e) => {
+                    if (e.target === this.dom.dialogContainer) this.closeDialog();
+                });
+                this.dom.startPurchaseBtn.addEventListener('click', () => this.startPurchaseFlow());
+                document.querySelectorAll('a[href="#get-app"]').forEach(el => {
+                    el.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        document.querySelector('#get-app').scrollIntoView({ behavior: 'smooth' });
+                    });
+                });
+                document.documentElement.addEventListener('mouseleave', (e) => {
+                    if (e.clientY < 10 && !this.urgencyState.exitIntentTriggered) {
+                        this.urgencyState.exitIntentTriggered = true;
+                        this.showExitIntentPopup();
+                    }
+                });
+            },
+
+            initScrollAnimations() {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            if (entry.target.id === 'counter-satisfaction') this.animateSatisfactionBar();
+                            if(!entry.target.classList.contains('hero')) observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                document.querySelectorAll('.animate-on-scroll, .hero').forEach(el => observer.observe(el));
+            },
+
+            initUrgencyFeatures() {
+                this.initializeDailySlots();
+                setTimeout(() => this.showTimedPopup(), 45000);
+                this.scheduleSocialProof();
+            },
+            
+            initializeDailySlots() {
+                const todayStr = new Date().toISOString().split('T')[0];
+                let slotData = JSON.parse(localStorage.getItem('slotData'));
+                if (!slotData || slotData.date !== todayStr) {
+                    slotData = { date: todayStr, currentSlots: Math.floor(Math.random() * (15 - 7 + 1)) + 7, extraSlotsAwarded: false };
+                }
+                localStorage.setItem('slotData', JSON.stringify(slotData));
+                this.updateSlotsUI(slotData.currentSlots);
+            },
+
+            updateSlotsUI(slots) {
+                [this.dom.slotsLeftHero, this.dom.slotsLeftMid, this.dom.slotsLeftMain].forEach(el => {
+                    if (el) el.textContent = slots;
+                });
+            },
+
+            showTimedPopup() {
+                let slotData = JSON.parse(localStorage.getItem('slotData'));
+                if (slotData && !slotData.extraSlotsAwarded) {
+                    slotData.currentSlots += 2;
+                    slotData.extraSlotsAwarded = true;
+                    localStorage.setItem('slotData', JSON.stringify(slotData));
+                    this.updateSlotsUI(slotData.currentSlots);
+
+                    const content = `
+                        <div class="text-center">
+                            <div class="text-5xl mb-4">🎯</div>
+                            <h3 class="text-2xl font-bold mb-2 text-yellow-400">${this.getTranslatedString('timedPopupTitle')}</h3>
+                            <p class="text-gray-300 mb-6">${this.getTranslatedString('timedPopupText')}</p>
+                            <a href="#get-app" id="timed-popup-cta" class="cta-button font-bold py-3 px-6 rounded-lg">${this.getTranslatedString('timedPopupButton')}</a>
+                        </div>
+                    `;
+                    this.showDialog(content);
+                    document.getElementById('timed-popup-cta').addEventListener('click', () => {
+                        this.closeDialog();
+                        document.querySelector('#get-app').scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+            },
+            
+            showExitIntentPopup() {
+                const content = `
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold mb-4">${this.getTranslatedString('exitIntentTitle')}</h3>
+                        <p class="text-gray-300 mb-6 text-lg">${this.getTranslatedString('exitIntentText')}</p>
+                        <button id="exit-intent-cta" class="cta-button font-bold py-3 px-6 rounded-lg">${this.getTranslatedString('exitIntentButton')}</button>
+                    </div>`;
+                this.showDialog(content);
+                document.getElementById('exit-intent-cta').onclick = () => {
+                    this.closeDialog();
+                    this.startPurchaseFlow();
+                    setTimeout(() => {
+                        const couponInput = document.getElementById('coupon-input');
+                        if (couponInput) {
+                            couponInput.value = '10OFF';
+                            this.applyCoupon();
+                        }
+                    }, 500);
+                };
+            },
+
+            scheduleSocialProof() {
+                this.urgencyState.socialProofTimeout = setTimeout(() => {
+                    this.showSocialProofNotification();
+                    this.scheduleSocialProof();
+                }, Math.random() * (35000 - 15000) + 15000);
+            },
+
+            showSocialProofNotification() {
+                const langKey = 'ru';
+                const data = socialProofData[langKey];
+                const name = data.names[Math.floor(Math.random() * data.names.length)];
+                const location = data.cities[Math.floor(Math.random() * data.cities.length)];
+                const text = this.getTranslatedString('socialProofAcquired', {NAME: name, LOCATION: location});
+
+                const notification = document.createElement('div');
+                notification.className = 'social-proof-notification bg-background-light/90 backdrop-blur-sm border border-[#30363d] rounded-lg p-4 shadow-lg flex items-center space-x-3 mb-3';
+                notification.innerHTML = `<div>${data.flag} ${text}</div>`;
+                this.dom.socialProofContainer.appendChild(notification);
+                setTimeout(() => notification.classList.add('show'), 100);
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                    setTimeout(() => notification.remove(), 500);
+                }, 5000);
+            },
+
+            initStaticCounters() {
+                const satisfaction = 98.5 + (Math.random() * 1.4);
+                this.dom.counterSatisfaction.textContent = `${satisfaction.toFixed(1)}%`;
+                this.dom.satisfactionBar.dataset.percent = satisfaction.toFixed(1);
+                this.dom.counterWinnings.textContent = `$${(140 + Math.floor(Math.random() * 25))}K+`;
+            },
+            
+            updateLiveCounters() {
+                this.dom.counterPlayers.textContent = `+${(1200 + Math.floor(Math.random() * 150)).toLocaleString()}`;
+            },
+
+            animateSatisfactionBar() {
+                if (this.dom.satisfactionBar) {
+                    this.dom.satisfactionBar.style.width = `${this.dom.satisfactionBar.dataset.percent}%`;
+                }
+            },
+
+            initLanguage() {
+                this.setLanguage('ru');
+            },
+
+            setLanguage(lang) {
+                document.documentElement.lang = lang;
+                this.populateAllDynamicContent();
+                document.querySelectorAll("[data-translate]").forEach(el => {
+                    const key = el.dataset.translate;
+                    const translation = this.getTranslatedString(key);
+                    if (['storyText', 'storyCallToAction', 'exitIntentText'].includes(key)) {
+                         el.innerHTML = translation; 
+                    } else {
+                         el.textContent = translation;
+                    }
+                });
+            },
+
+            getTranslatedString(key, replacements = {}) {
+                let translation = translations.ru[key] || key;
+                Object.entries(replacements).forEach(([p, v]) => {
+                    translation = translation.replace(`{${p.toUpperCase()}}`, v);
+                });
+                return translation;
+            },
+            
+            populateAllDynamicContent() {
+                this.populateFeatures();
+                this.populateHowItWorks();
+                this.populateStory();
+                this.populateTestimonials();
+            },
+
+            populateFeatures() {
+                const f = [ 'feature1', 'feature2', 'feature3', 'feature4', 'feature5', 'feature6'];
+                const i = [ 'fa-eye', 'fa-crosshairs', 'fa-shield-alt', 'fa-chart-line', 'fa-sync', 'fa-headset'];
+                this.dom.featuresGrid.innerHTML = f.map((k, idx) => `
+                    <div class="feature-card animate-on-scroll" style="transition-delay: ${idx * 100}ms;">
+                        <div class="text-4xl text-primary-color mb-4"><i class="fas ${i[idx]}"></i></div>
+                        <h3 class="text-xl font-bold mb-2">${this.getTranslatedString(`${k}Title`)}</h3>
+                        <p class="text-gray-400">${this.getTranslatedString(`${k}Text`)}</p>
+                    </div>`).join('');
+            },
+            
+            populateHowItWorks() {
+                 this.dom.howItWorksGrid.innerHTML = [1, 2, 3].map((i, idx) => `
+                    <div class="text-center animate-on-scroll" style="transition-delay: ${idx * 150}ms;">
+                        <div class="relative mb-4">
+                             <div class="w-24 h-24 bg-background-dark rounded-full mx-auto flex items-center justify-center text-4xl font-bold text-primary-color border-2 border-[#30363d]">${i}</div>
+                            ${i < 3 ? '<div class="absolute top-1/2 left-full w-full h-0.5 bg-[#30363d] hidden md:block" style="transform: translateY(-50%);"></div>' : ''}
+                        </div>
+                        <h3 class="text-xl font-bold mt-4 mb-2">${this.getTranslatedString(`step${i}Title`)}</h3>
+                        <p class="text-gray-400">${this.getTranslatedString(`step${i}Text`)}</p>
+                    </div>`).join('');
+            },
+
+            populateStory() {
+                this.dom.storyContainer.innerHTML = `<p class="text-lg text-gray-300 mb-6">${this.getTranslatedString('storyText')}</p><p class="text-xl text-secondary-color font-semibold">${this.getTranslatedString('storyCallToAction')}</p>`;
+            },
+            
+            populateTestimonials() {
+                 const t = [1, 2, 3];
+                 this.dom.testimonialsContainer.innerHTML = t.map((k, idx) => `
+                    <div class="testimonial-card animate-on-scroll" style="transition-delay: ${idx * 100}ms;">
+                        <i class="fas fa-quote-left text-primary-color text-2xl mb-4"></i>
+                        <p class="text-gray-400 mb-4">${this.getTranslatedString(`testimonial${k}Quote`)}</p>
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/40x40/161B22/E6EDF3?text=${this.getTranslatedString(`testimonial${k}Author`)[0]}" class="w-10 h-10 rounded-full mr-4" alt="User photo">
+                            <div><p class="font-semibold">${this.getTranslatedString(`testimonial${k}Author`)}</p></div>
+                        </div>
+                    </div>`).join('');
+            },
+
+            showDialog(content) {
+                this.dom.dialogContainer.innerHTML = `<div class="dialog-content w-full max-w-md p-6 rounded-lg animate-on-scroll is-visible">${content}</div>`;
+                this.dom.dialogContainer.classList.remove('hidden');
+            },
+
+            closeDialog() {
+                this.dom.dialogContainer.classList.add('hidden');
+            },
+            
+            startPurchaseFlow() {
+                const email = localStorage.getItem("userEmail");
+                const username = localStorage.getItem("username");
+                if (email && username) {
+                    this.purchaseState.email = email;
+                    this.purchaseState.username = username;
+                    this.showPlatformDialog();
+                } else {
+                    this.showRegistrationDialog();
+                }
+            },
+
+            showRegistrationDialog() {
+                const content = `
+                    <h3 class="text-xl font-bold mb-4 text-center">${this.getTranslatedString('registerTitle')}</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <label for="email-input" class="block mb-2 text-sm font-medium">${this.getTranslatedString('emailLabel')}</label>
+                            <input type="email" id="email-input" class="bg-[#0D1117] border border-[#30363d] text-white text-sm rounded-lg focus:ring-primary-color focus:border-primary-color block w-full p-2.5" placeholder="${this.getTranslatedString('emailPlaceholder')}" required>
+                             <p id="email-validation-message" class="text-red-500 text-sm mt-1 h-4"></p>
+                        </div>
+                        <div>
+                            <label for="username-input" class="block mb-2 text-sm font-medium">${this.getTranslatedString('usernameLabel')}</label>
+                            <input type="text" id="username-input" class="bg-[#0D1117] border border-[#30363d] text-white text-sm rounded-lg focus:ring-primary-color focus:border-primary-color block w-full p-2.5" placeholder="${this.getTranslatedString('usernamePlaceholder')}" required>
+                            <p id="username-validation-message" class="text-red-500 text-sm mt-1 h-4"></p>
+                        </div>
+                        <button id="submit-registration-btn" class="w-full cta-button font-bold py-2.5 px-5 rounded-lg">${this.getTranslatedString('registerButton')}</button>
+                    </div>`;
+                this.showDialog(content);
+                document.getElementById('submit-registration-btn').onclick = () => this.submitRegistration();
+            },
+            
+            submitRegistration() {
+                const emailInput = document.getElementById("email-input");
+                const usernameInput = document.getElementById("username-input");
+                let isValid = true;
+                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
+                    document.getElementById("email-validation-message").textContent = this.getTranslatedString('emailValidationError');
+                    isValid = false;
+                } else {
+                    document.getElementById("email-validation-message").textContent = '';
+                }
+                if (usernameInput.value.length < 3) {
+                    document.getElementById("username-validation-message").textContent = this.getTranslatedString('usernameValidationError');
+                    isValid = false;
+                } else {
+                    document.getElementById("username-validation-message").textContent = '';
+                }
+                if(isValid) {
+                    localStorage.setItem("userEmail", emailInput.value);
+                    localStorage.setItem("username", usernameInput.value);
+                    this.purchaseState.email = emailInput.value;
+                    this.purchaseState.username = usernameInput.value;
+                    this.showPlatformDialog();
+                }
+            },
+
+            showPlatformDialog() {
+                const content = `
+                    <h3 class="text-xl font-bold mb-4 text-center">${this.getTranslatedString('platformDialogTitle')}</h3>
+                    <p class="text-center text-gray-400 mb-6">${this.getTranslatedString('platformDialogText')}</p>
+                    <div class="flex justify-center space-x-4">
+                        <button id="select-android" class="flex-1 bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded-lg transition"><i class="fab fa-android mr-2"></i><span>${this.getTranslatedString('platformAndroid')}</span></button>
+                        <button id="select-ios" class="flex-1 bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded-lg transition"><i class="fab fa-apple mr-2"></i><span>${this.getTranslatedString('platformIOS')}</span></button>
+                    </div>`;
+                this.showDialog(content);
+                document.getElementById('select-android').onclick = () => this.selectPlatform('Android');
+                document.getElementById('select-ios').onclick = () => this.selectPlatform('iOS');
+            },
+            
+            selectPlatform(platform) {
+                this.purchaseState.platform = platform;
+                this.showUniqueIdDialog();
+            },
+
+            showUniqueIdDialog() {
+                let uniqueId = localStorage.getItem("uniqueId") || Date.now().toString().slice(-9);
+                localStorage.setItem("uniqueId", uniqueId);
+                this.purchaseState.uniqueId = uniqueId;
+                const content = `
+                    <h3 class="text-xl font-bold mb-4 text-center">${this.getTranslatedString('uniqueIdDialogTitle')}</h3>
+                    <p class="text-center text-gray-400 mb-4">${this.getTranslatedString('uniqueIdDialogText')}</p>
+                    <div class="flex items-center bg-background-dark p-3 rounded-lg">
+                        <span id="unique-id-value" class="flex-grow text-lg font-mono text-secondary-color">${uniqueId}</span>
+                        <button id="copy-id-btn" class="bg-primary-color/80 hover:bg-primary-color text-black font-bold py-2 px-3 rounded-lg ml-4"><i class="fas fa-copy"></i></button>
+                    </div>
+                    <button id="continue-to-payment" class="mt-6 w-full cta-button font-bold py-2.5 px-5 rounded-lg">${this.getTranslatedString('continueButton')}</button>`;
+                this.showDialog(content);
+                document.getElementById('copy-id-btn').onclick = () => this.copyToClipboard(uniqueId, true);
+                document.getElementById('continue-to-payment').onclick = () => this.showCouponDialog();
+            },
+
+            showCouponDialog() {
+                const finalPrice = this.purchaseState.basePrice * (1 - this.purchaseState.discount);
+                const originalPrice = 4000;
+                let priceHTML = `
+                    <p class="text-gray-500 text-lg">
+                        <span>${this.getTranslatedString('originalAmountLabel')}</span>:
+                        <s id="original-price-value">$${originalPrice.toFixed(2)}</s>
+                    </p>
+                    <p id="final-price-display" class="text-3xl font-bold text-primary-color mt-1">${this.getTranslatedString('amountTextBase', { PRICE: `$${this.purchaseState.basePrice.toFixed(2)}`})}</p>
+                `;
+
+                if (this.purchaseState.discount > 0) {
+                    priceHTML += `
+                     <p id="final-price-display-discount" class="text-3xl font-bold text-secondary-color mt-2">
+                        Цена со скидкой: $${finalPrice.toFixed(2)}
+                    </p>`;
+                }
+
+                const content = `
+                    <h3 class="text-xl font-bold mb-4 text-center">${this.getTranslatedString('couponDialogTitle')}</h3>
+                    <div class="text-center mb-4 space-y-1">${priceHTML}</div>
+                    <p class="text-center text-gray-400 mb-4">${this.getTranslatedString('couponDialogText')}</p>
+                    <div class="flex items-center space-x-2">
+                        <input type="text" id="coupon-input" class="w-full bg-[#0D1117] border border-[#30363d] text-white text-sm rounded-lg p-2.5" placeholder="${this.getTranslatedString('couponPlaceholder')}">
+                        <button id="apply-coupon-btn" class="cta-button font-bold py-2.5 px-5 rounded-lg">${this.getTranslatedString('applyCouponButton')}</button>
+                    </div>
+                    <p id="coupon-message" class="text-center h-5 mt-2 text-sm"></p>
+                    <button id="proceed-to-payment-method" class="mt-4 w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2.5 px-5 rounded-lg">${this.getTranslatedString('proceedButton')}</button>`;
+                this.showDialog(content);
+                document.getElementById('apply-coupon-btn').onclick = () => this.applyCoupon();
+                document.getElementById('proceed-to-payment-method').onclick = () => this.proceedToPaymentMethod();
+            },
+
+            applyCoupon() {
+                const couponInput = document.getElementById('coupon-input');
+                const code = couponInput.value.trim().toUpperCase();
+                let discount = 0;
+                if (code === '10OFF' || code === '5OFF') {
+                    discount = (code === '10OFF') ? 0.10 : 0.05;
+                    this.purchaseState.discount = discount;
+                } else {
+                    this.purchaseState.discount = 0;
+                }
+                this.showCouponDialog();
+                setTimeout(() => {
+                    const newCouponInput = document.getElementById('coupon-input');
+                    if (newCouponInput) newCouponInput.value = code;
+                    const messageEl = document.getElementById('coupon-message');
+                    if (messageEl) {
+                        if (this.purchaseState.discount > 0) {
+                            messageEl.textContent = this.getTranslatedString('couponAppliedSuccess', { COUPON_CODE: code, DISCOUNT: (this.purchaseState.discount * 100) });
+                            messageEl.className = 'text-center h-5 mt-2 text-sm text-green-400';
+                        } else {
+                            messageEl.textContent = this.getTranslatedString('couponErrorInvalid');
+                            messageEl.className = 'text-center h-5 mt-2 text-sm text-red-400';
+                        }
+                    }
+                }, 0);
+            },
+            
+            proceedToPaymentMethod() {
+                this.purchaseState.finalPrice = this.purchaseState.basePrice * (1 - this.purchaseState.discount);
+                this.showPaymentMethodDialog();
+            },
+
+            showPaymentMethodDialog() {
+                const content = `
+                    <h3 class="text-xl font-bold mb-4 text-center">${this.getTranslatedString('paymentMethodDialogTitle')}</h3>
+                    <p class="text-center text-gray-400 mb-6">${this.getTranslatedString('paymentMethodDialogText')}</p>
+                    <div class="space-y-3">
+                        <button id="pay-usdt" class="w-full bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-4 rounded-lg transition">USDT (TRC20)</button>
+                        <button id="pay-btc" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-lg transition">BTC</button>
+                        <button id="pay-eth" class="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-4 rounded-lg transition">ETH</button>
+                    </div>`;
+                this.showDialog(content);
+                document.getElementById('pay-usdt').onclick = () => this.selectPaymentMethod('usdt');
+                document.getElementById('pay-btc').onclick = () => this.selectPaymentMethod('btc');
+                document.getElementById('pay-eth').onclick = () => this.selectPaymentMethod('eth');
+            },
+
+            async selectPaymentMethod(method) {
+                this.purchaseState.method = method;
+                await this.showPaymentDetailsDialog();
+            },
+
+            async getCryptoPrice(cryptoId) {
+                try {
+                    const response = await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${cryptoId}&vs_currencies=usd`);
+                    if (!response.ok) throw new Error('Network response was not ok.');
+                    const data = await response.json();
+                    return data[cryptoId].usd;
+                } catch (error) {
+                    console.error("Failed to fetch crypto price:", error);
+                    return null;
+                }
+            },
+
+            async showPaymentDetailsDialog() {
+                const { method, finalPrice } = this.purchaseState;
+                const addresses = {
+                    usdt: "TDZEoAmb9BuibfgZ4XJryq4TnSKr9XWRMH",
+                    btc: "bc1qf9y2vazaar9pukrmd0d4e3xw3ywmc0tv82tjk2",
+                    eth: "0xf0eE401244129864CD9598EaAf2c6b1b2292aF89"
+                };
+                const networks = { usdt: "TRC20", btc: "Bitcoin", eth: "Ethereum (ERC20)" };
+                const cryptoIds = { btc: 'bitcoin', eth: 'ethereum' };
+                const address = addresses[method];
+                const network = networks[method];
+                const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${address}`;
+                let cryptoAmountHTML = `<p class="text-3xl font-bold text-secondary-color">$${finalPrice.toFixed(2)}</p>`;
+                if (method !== 'usdt') {
+                    cryptoAmountHTML = `<div class="h-8 flex items-center justify-center"><div class="spinner"></div><span class="ml-2">${this.getTranslatedString('loadingPaymentText')}</span></div>`;
+                }
+                const content = `
+                    <h3 class="text-xl font-bold mb-2 text-center">${this.getTranslatedString('paymentDialogTitleFinal')}</h3>
+                    <p class="text-center text-gray-400 mb-6">${this.getTranslatedString('paymentInstructionsText')}</p>
+                    <div id="payment-amount-container" class="text-center mb-4">${cryptoAmountHTML}</div>
+                    <div class="flex justify-center mb-4"><div class="p-2 bg-white rounded-lg border-4 border-[#30363d]"><img src="${qrUrl}" alt="${method.toUpperCase()} QR Code"></div></div>
+                    <div class="flex items-center bg-background-dark p-2 rounded-lg">
+                        <input id="wallet-address-input" type="text" class="flex-grow bg-transparent text-xs text-gray-300 border-0 focus:ring-0" value="${address}" readonly>
+                        <button id="copy-address-btn" class="bg-primary-color/80 hover:bg-primary-color text-black font-bold py-2 px-3 rounded-lg ml-2"><i class="fas fa-copy"></i></button>
+                    </div>
+                    <p id="copy-feedback-dialog" class="text-green-400 text-sm mt-2 h-4 text-center"></p>
+                    <p class="text-xs text-gray-500 text-center mt-4">${this.getTranslatedString('paymentInstructionsSecurity')}</p>
+                    <button id="payment-done-btn" class="mt-6 w-full cta-button font-bold py-3 px-5 rounded-lg">${this.getTranslatedString('paymentDoneButton')}</button>`;
+                this.showDialog(content);
+                document.getElementById('copy-address-btn').onclick = () => this.copyToClipboard(address, true);
+                document.getElementById('payment-done-btn').onclick = () => this.proceedToFinalConfirmation();
+               
+                if (method !== 'usdt') {
+                    const cryptoPrice = await this.getCryptoPrice(cryptoIds[method]);
+                    const paymentAmountContainer = document.getElementById('payment-amount-container');
+                    if (cryptoPrice) {
+                        const cryptoAmount = (finalPrice / cryptoPrice).toFixed(8);
+                        paymentAmountContainer.innerHTML = `
+                            <p class="text-sm text-gray-400">${this.getTranslatedString('amountToSendLabel')} $${finalPrice.toFixed(2)}</p>
+                            <p class="text-2xl font-bold text-secondary-color">${cryptoAmount} ${method.toUpperCase()}</p>
+                            <p class="text-sm text-gray-500"><span>${this.getTranslatedString('networkLabel')}</span>: ${network}</p>`;
+                    } else {
+                        paymentAmountContainer.innerHTML = `<p class="text-red-400">Не удалось получить курс. Попробуйте снова.</p>`;
+                    }
+                }
+            },
+            
+            copyToClipboard(text, isDialog) {
+                navigator.clipboard.writeText(text).then(() => {
+                    const feedbackEl = document.getElementById(isDialog ? 'copy-feedback-dialog' : 'copy-feedback');
+                    if(feedbackEl) {
+                        feedbackEl.textContent = this.getTranslatedString('alertCopied');
+                        setTimeout(() => { feedbackEl.textContent = ''; }, 2000);
+                    }
+                });
+            },
+
+            proceedToFinalConfirmation() {
+                this.closeDialog();
+                this.showPaymentConfirmationPage();
+            },
+
+            showPaymentConfirmationPage() {
+                this.dom.mainContent.classList.add('hidden');
+                const uniqueId = this.purchaseState.uniqueId || localStorage.getItem('uniqueId');
+                const telegramMessage = `ID: ${uniqueId}\nPlatform: ${this.purchaseState.platform}\nApp: ${this.purchaseState.app}`;
+                const telegramUrl = `https://t.me/bedmalcon_temp?text=${encodeURIComponent(telegramMessage)}`;
+                this.dom.paymentConfirmationContent.innerHTML = `
+                    <section class="min-h-screen py-16 md:py-24 flex items-center">
+                        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                            <div class="max-w-2xl mx-auto bg-background-light p-6 md:p-8 rounded-lg shadow-xl text-center">
+                                <div class="text-6xl text-primary-color mb-4"><i class="fas fa-check-circle"></i></div>
+                                <h3 class="text-2xl font-bold mb-4">${this.getTranslatedString('telegramInstructionsTitle')}</h3>
+                                <p class="text-gray-400 mb-6">${this.getTranslatedString('telegramInstructionsText')}</p>
+                                <div class="flex items-center bg-background-dark p-3 rounded-lg max-w-sm mx-auto">
+                                    <span class="flex-grow text-lg font-mono text-secondary-color">${uniqueId}</span>
+                                    <button id="copy-id-button-confirm" class="bg-primary-color/80 hover:bg-primary-color text-black font-bold py-2 px-3 rounded-lg ml-4"><i class="fas fa-copy"></i></button>
+                                </div>
+                                <p id="copy-feedback" class="text-green-400 text-sm mt-2 h-4"></p>
+                                <div class="mt-8 bg-background-dark/50 p-6 rounded-lg text-left max-w-md mx-auto">
+                                     <div class="space-y-4">
+                                         <div><h4 class="font-semibold">${this.getTranslatedString('telegramStep1Title')}</h4><p class="text-sm text-gray-400">${this.getTranslatedString('telegramStep1Desc')}</p></div>
+                                         <div><h4 class="font-semibold">${this.getTranslatedString('telegramStep2Title')}</h4><p class="text-sm text-gray-400">${this.getTranslatedString('telegramStep2Desc')}</p></div>
+                                         <div><h4 class="font-semibold">${this.getTranslatedString('telegramStep3Title')}</h4><p class="text-sm text-gray-400">${this.getTranslatedString('telegramStep3Desc')}</p></div>
+                                     </div>
+                                </div>
+                                <a href="${telegramUrl}" target="_blank" class="inline-block mt-8 bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition text-lg">
+                                    <i class="fab fa-telegram-plane mr-2"></i><span>${this.getTranslatedString('openTelegramButton')}</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>`;
+                this.dom.paymentConfirmationContent.classList.remove('hidden');
+                document.getElementById('copy-id-button-confirm').onclick = () => this.copyToClipboard(uniqueId, false);
+                window.scrollTo(0, 0);
+            },
+        };
+        App.init();
+    });
+    </script>
+    
+    <!-- Code Protection Script -->
+    <script>
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.addEventListener('keydown', e => {
+            if (e.keyCode === 123 || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || (e.ctrlKey && e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
