@@ -232,11 +232,11 @@
         <div class="flex justify-between items-center mb-8">
              <a href="#" onclick="window.location.reload()" class="flex items-center space-x-2 cursor-pointer">
                  <svg class="h-8 w-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <defs><linearGradient id="logoGradientMobile" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#34D399" /><stop offset="100%" stop-color="#FBBF24" /></linearGradient></defs>
-                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#logoGradientMobile)" stroke-width="10"/>
-                    <text x="50" y="68" font-family="Inter, sans-serif" font-size="40" font-weight="bold" fill="white" text-anchor="middle">C</text>
-                </svg>
-                <span class="text-xl font-bold text-text-light">ClubGG Cheat</span>
+                     <defs><linearGradient id="logoGradientMobile" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#34D399" /><stop offset="100%" stop-color="#FBBF24" /></linearGradient></defs>
+                     <circle cx="50" cy="50" r="45" fill="none" stroke="url(#logoGradientMobile)" stroke-width="10"/>
+                     <text x="50" y="68" font-family="Inter, sans-serif" font-size="40" font-weight="bold" fill="white" text-anchor="middle">C</text>
+                 </svg>
+                 <span class="text-xl font-bold text-text-light">ClubGG Cheat</span>
             </a>
             <button id="mobile-menu-close" class="text-gray-300 hover:text-white">
                 <i class="fas fa-times text-2xl"></i>
@@ -610,7 +610,7 @@
     
     // --- Localized Social Proof Data ---
     const socialProofData = {
-      "ru": { names: ["Александр","Дмитрий","Сергей", "Елена"], cities:["Москва","Санкт-Петербург", "Новосибирск", "Екатеринбург"], flag: "🇷🇺", country: "России" }
+      "ru": { names: ["Александр","Дмитрий","Сергей", "Елена"], cities:["Москва","Санкт-Петербург", "Новосибирск", "Екатеринбург"], flag: "�🇺", country: "России" }
     };
 
     const langToCountryMap = {
@@ -976,7 +976,7 @@
                 const content = `
                     <h3 class="text-xl font-bold mb-4 text-center">${this.getTranslatedString('platformDialogTitle')}</h3>
                     <p class="text-center text-gray-400 mb-6">${this.getTranslatedString('platformDialogText')}</p>
-                    <div class="flex justify-center space-x-4">
+                    <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
                         <button id="select-android" class="flex-1 bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded-lg transition"><i class="fab fa-android mr-2"></i><span>${this.getTranslatedString('platformAndroid')}</span></button>
                         <button id="select-ios" class="flex-1 bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded-lg transition"><i class="fab fa-apple mr-2"></i><span>${this.getTranslatedString('platformIOS')}</span></button>
                     </div>`;
@@ -1019,8 +1019,12 @@
                 `;
 
                 if (this.purchaseState.discount > 0) {
-                    priceHTML += `
-                     <p id="final-price-display-discount" class="text-3xl font-bold text-secondary-color mt-2">
+                    priceHTML = `
+                     <p class="text-gray-500 text-lg">
+                        <span>${this.getTranslatedString('originalAmountLabel')}</span>:
+                        <s id="original-price-value">$${this.purchaseState.basePrice.toFixed(2)}</s>
+                    </p>
+                    <p id="final-price-display-discount" class="text-3xl font-bold text-secondary-color mt-1">
                         Цена со скидкой: $${finalPrice.toFixed(2)}
                     </p>`;
                 }
@@ -1029,9 +1033,9 @@
                     <h3 class="text-xl font-bold mb-4 text-center">${this.getTranslatedString('couponDialogTitle')}</h3>
                     <div class="text-center mb-4 space-y-1">${priceHTML}</div>
                     <p class="text-center text-gray-400 mb-4">${this.getTranslatedString('couponDialogText')}</p>
-                    <div class="flex items-center space-x-2">
+                    <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-2">
                         <input type="text" id="coupon-input" class="w-full bg-[#0D1117] border border-[#30363d] text-white text-sm rounded-lg p-2.5" placeholder="${this.getTranslatedString('couponPlaceholder')}">
-                        <button id="apply-coupon-btn" class="cta-button font-bold py-2.5 px-5 rounded-lg">${this.getTranslatedString('applyCouponButton')}</button>
+                        <button id="apply-coupon-btn" class="w-full sm:w-auto cta-button font-bold py-2.5 px-5 rounded-lg">${this.getTranslatedString('applyCouponButton')}</button>
                     </div>
                     <p id="coupon-message" class="text-center h-5 mt-2 text-sm"></p>
                     <button id="proceed-to-payment-method" class="mt-4 w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2.5 px-5 rounded-lg">${this.getTranslatedString('proceedButton')}</button>`;
@@ -1135,7 +1139,7 @@
                 this.showDialog(content);
                 document.getElementById('copy-address-btn').onclick = () => this.copyToClipboard(address, true);
                 document.getElementById('payment-done-btn').onclick = () => this.proceedToFinalConfirmation();
-               
+                
                 if (method !== 'usdt') {
                     const cryptoPrice = await this.getCryptoPrice(cryptoIds[method]);
                     const paymentAmountContainer = document.getElementById('payment-amount-container');
