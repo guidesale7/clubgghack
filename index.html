@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reveal Intelligence | Real-Time Poker Decision Advantage</title>
-    <meta name="description" content="Gain a decisive edge. Reveal Intelligence is a strategic analysis platform providing real-time opponent data for the world's top private poker club apps.">
+    <title>Reveal Intelligence | Veja as Cartas dos Oponentes</title>
+    <meta name="description" content="Veja as cartas dos oponentes em tempo real no seu celular. Compatível com PokerBROS, Suprema, PPPoker e mais. Instalação em 5 min. Sem root. Totalmente indetectável.">
     <meta name="keywords" content="poker tool, pokerbros hack, pppoker hack, upoker, suprema poker, clubgg hack, pokerstars tool, ggpoker assistant, poker strategy, real-time poker assistant, poker intelligence, win at poker, poker cheat, see opponent cards, poker hud">
     
     <!-- SEO and Social Sharing -->
     <link rel="canonical" href="https://cheatclubgg.com/">
-    <meta property="og:title" content="Reveal Intelligence | The Ultimate Strategic Edge in Online Poker">
-    <meta property="og:description" content="Stop guessing. Start dominating. Access real-time opponent hole card data on PokerBROS, PPPoker, ClubGG, and 9 other leading platforms.">
+    <meta property="og:title" content="Reveal Intelligence | Veja as Cartas dos Oponentes no Seu Celular">
+    <meta property="og:description" content="Compatível com PokerBROS, Suprema, PPPoker e mais. Instalação em 5 min. Sem root. Totalmente indetectável.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1542751371-6593C056334c?q=80&w=1200&auto=format&fit=crop">
     <meta property="og:url" content="https://cheatclubgg.com/">
     <meta property="og:type" content="website">
@@ -18,8 +18,6 @@
     <!-- Language Specific Keywords for SEO -->
     <meta name="keywords" lang="pt" content="ferramenta de poker, hack pokerbros, hack pppoker, hack suprema poker, estratégia poker, assistente de poker em tempo real, como ganhar no poker online, ver cartas poker, hud para poker, app para ver cartas">
     <meta name="keywords" lang="es" content="herramienta de póker, hack pokerbros, hack pppoker, hack suprema poker, estrategia de póker, asistente de póker en tiempo real, ganar en póker online, ver cartas de póker, hud para póker">
-    <meta name="keywords" lang="de" content="Poker-Tool, PokerBROS-Hack, PPPoker-Hack, Suprema Poker-Hack, Poker-Strategie, Echtzeit-Poker-Assistent">
-
 
     <!-- SVG Favicon -->
     <link id="favicon" rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><defs><linearGradient id=%22g%22 x1=%220%25%22 y1=%220%25%22 x2=%22100%25%22 y2=%220%25%22><stop offset=%220%25%22 stop-color=%22%234F46E5%22 /><stop offset=%22100%25%22 stop-color=%22%23A259FF%22 /></linearGradient></defs><circle cx=%2250%22 cy=%2250%22 r=%2245%22 stroke=%22url(%23g)%22 stroke-width=%2210%22 fill=%22none%22 /><path d=%22M30 60 L50 30 L70 60%22 stroke=%22white%22 stroke-width=%228%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
@@ -44,9 +42,9 @@
             --color-background: #05070D;
             --color-surface: #101827;
             --text-light: #E5E7EB;
-            --text-muted: #A0AEC0; /* Brighter for better contrast */
+            --text-muted: #A0AEC0;
         }
-        html { scroll-behavior: smooth; }
+        html { scroll-behavior: smooth; padding-bottom: 60px; /* Space for sticky bar */ }
         body {
             font-family: 'Roboto', sans-serif;
             background-color: var(--color-background);
@@ -93,9 +91,7 @@
             opacity: 1;
             transform: translateY(0);
         }
-        .dialog-content {
-            transition: all 0.3s ease-in-out;
-        }
+        
         .platform-btn, .crypto-btn {
             background-color: var(--color-surface);
             border: 2px solid #4A5568;
@@ -107,41 +103,72 @@
             color: white;
             box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
         }
-        #dialog-content select, #dialog-content input[type="email"], #dialog-content input[type="text"] {
+        #get-access select, #get-access input {
             background-color: var(--color-surface);
             border: 2px solid #4A5568;
             color: var(--text-light);
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
-        #dialog-content select:focus, #dialog-content input[type="email"]:focus, #dialog-content input[type="text"]:focus {
-            border-color: var(--color-primary);
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.5);
+        .testimonial-bubble {
+            background-color: #2d3748; /* Cor de fundo do balão de chat */
+            border-radius: 1.5rem;
+            padding: 1rem 1.5rem;
+            position: relative;
         }
-        /* Infinite Scroller Styles */
-        .scroller {
-            max-width: 1200px;
+        .testimonial-bubble::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 1.5rem;
+            width: 0;
+            height: 0;
+            border: 15px solid transparent;
+            border-top-color: #2d3748;
+            border-bottom: 0;
+            border-left: 0;
+            margin-left: -5px;
+            margin-bottom: -15px;
+        }
+        .video-card {
+            cursor: pointer;
             overflow: hidden;
-            -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-            mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+            border-radius: 1rem;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .scroller-inner {
+        .video-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .video-card .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4rem;
+            color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(5px);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
             display: flex;
-            gap: 2rem;
-            width: max-content;
-            animation: scroll 40s linear infinite;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,0,0,0.3);
+            transition: background 0.3s ease;
         }
-        @keyframes scroll {
-            to {
-                transform: translate(calc(-50% - 1rem));
-            }
+        .video-card:hover .play-icon {
+            background: rgba(79, 70, 229, 0.7);
+        }
+        #video-modal {
+            background-color: rgba(0,0,0,0.85);
+            backdrop-filter: blur(10px);
         }
     </style>
 </head>
 <body class="overflow-x-hidden">
 
     <!-- Header -->
-    <header class="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-lg">
+    <header class="fixed top-0 left-0 w-full z-40 bg-black/30 backdrop-blur-lg">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <a href="#" class="flex items-center space-x-2">
@@ -153,25 +180,10 @@
                     <a href="#testimonials" class="text-gray-300 hover:text-white transition" data-translate="navTestimonials">Depoimentos</a>
                     <a href="#faq" class="text-gray-300 hover:text-white transition" data-translate="navFaq">FAQ</a>
                 </nav>
-                <a href="#get-access" class="hidden md:block cta-button font-bold text-white py-2 px-5 rounded-lg" data-translate="getAccessButton">Obter Acesso</a>
-                <button id="mobile-menu-button" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+                <a href="#get-access" class="hidden md:block cta-button font-bold text-white py-2 px-5 rounded-lg" data-translate="navCta">Quero Minha Vantagem</a>
             </div>
         </div>
     </header>
-    
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-background/95 backdrop-blur-xl z-50 transform -translate-y-full transition-transform duration-300 md:hidden">
-        <div class="flex justify-between items-center p-6 border-b border-gray-800">
-            <span class="text-xl font-bold">Reveal<span class="text-gradient">Intel</span></span>
-            <button id="mobile-menu-close" class="text-2xl"><i class="fas fa-times"></i></button>
-        </div>
-        <nav class="flex flex-col items-center justify-center h-full space-y-8 text-xl">
-             <a href="#how-it-works" class="text-gray-300 hover:text-white transition" data-translate="navHowItWorks">Como Funciona</a>
-             <a href="#testimonials" class="text-gray-300 hover:text-white transition" data-translate="navTestimonials">Depoimentos</a>
-             <a href="#faq" class="text-gray-300 hover:text-white transition" data-translate="navFaq">FAQ</a>
-             <a href="#get-access" class="cta-button font-bold text-white py-3 px-8 rounded-lg mt-4" data-translate="getAccessButton">Obter Acesso</a>
-        </nav>
-    </div>
 
     <main id="main-content">
         <!-- Hero Section -->
@@ -181,87 +193,164 @@
             
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="max-w-4xl mx-auto">
-                    <h1 class="text-4xl sm:text-5xl md:text-7xl font-black tracking-tighter mb-6 animate-on-scroll" data-translate="heroTitle">A Mesa é uma História.<br>Nós Deixamos Você Ler o <span class="text-gradient">Capítulo Final</span> Primeiro.</h1>
-                    <p class="text-lg md:text-xl max-w-2xl mx-auto text-text-muted mb-10 animate-on-scroll" style="transition-delay: 0.2s;" data-translate="heroTagline">Pare de adivinhar. Comece a dominar. Nossa plataforma de inteligência de servidor oferece a vantagem definitiva, revelando dados dos oponentes em tempo real nos principais aplicativos de poker privados do mundo.</p>
+                    <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-tighter mb-6 animate-on-scroll" data-translate="heroTitle">Veja as Cartas dos Oponentes no Seu Celular</h1>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto text-text-muted mb-10 animate-on-scroll" style="transition-delay: 0.2s;" data-translate="heroSubtitle">Compatível com PokerBROS, Suprema, PPPoker e mais. Instalação em 5 min. Sem root. Totalmente indetectável.</p>
                     <div class="animate-on-scroll" style="transition-delay: 0.4s;">
-                        <a href="#get-access" class="cta-button text-xl font-bold py-4 px-10 rounded-lg" data-translate="heroCta">Desbloquear Minha Vantagem</a>
+                        <a href="#get-access" class="cta-button text-xl font-bold py-4 px-10 rounded-lg" data-translate="heroCta">Quero Liberar Minha Licença Agora</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Supported Apps Section -->
-        <section class="py-12 bg-black/20">
+        <!-- How it Works -->
+        <section id="how-it-works" class="py-20 md:py-28 bg-color-surface">
             <div class="container mx-auto px-4">
-                <h3 class="text-center text-text-muted font-semibold mb-6" data-translate="supportedAppsTitle">INTEGRADO COM 12 DAS PRINCIPAIS PLATAFORMAS DE CLUBES PRIVADOS DO MUNDO</h3>
-                <div class="scroller">
-                    <div id="app-logo-scroller" class="scroller-inner">
-                        <!-- App logos injected by JS -->
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4" data-translate="howItWorksTitle">Sua Vantagem em <span class="text-gradient">3 Passos</span></h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6 sm:p-8 animate-on-scroll">
+                        <div class="text-6xl mb-4 text-gradient"><i class="fas fa-credit-card"></i></div>
+                        <h3 class="text-2xl font-bold mb-2" data-translate="step1Title">1. Libere sua Licença</h3>
+                        <p class="text-text-muted" data-translate="step1Text">Escolha seu app e pague com cripto de forma 100% anônima e segura.</p>
+                    </div>
+                    <div class="p-6 sm:p-8 animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="text-6xl mb-4 text-gradient"><i class="fab fa-telegram-plane"></i></div>
+                        <h3 class="text-2xl font-bold mb-2" data-translate="step2Title">2. Ative no Telegram</h3>
+                        <p class="text-text-muted" data-translate="step2Text">Fale com nosso suporte com seu ID de compra para receber seu download personalizado.</p>
+                    </div>
+                    <div class="p-6 sm:p-8 animate-on-scroll" style="transition-delay: 0.4s;">
+                        <div class="text-6xl mb-4 text-gradient"><i class="fas fa-download"></i></div>
+                        <h3 class="text-2xl font-bold mb-2" data-translate="step3Title">3. Baixe e Domine</h3>
+                        <p class="text-text-muted" data-translate="step3Text">Instale o app no seu celular (Android/iOS) e comece a ver as cartas em minutos.</p>
                     </div>
                 </div>
             </div>
         </section>
         
-        <!-- How it Works -->
-        <section id="how-it-works" class="py-20 md:py-32">
+        <!-- App in Action Section -->
+        <section id="app-in-action" class="py-20 md:py-28">
             <div class="container mx-auto px-4">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-4" data-translate="howItWorksTitle">Da Incerteza à <span class="text-gradient">Certeza</span> em 3 Passos</h2>
-                    <p class="text-lg text-text-muted" data-translate="howItWorksTagline">Nossa tecnologia opera a nível de servidor, garantindo poder, segurança e sendo completamente indetectável.</p>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4" data-translate="videoSectionTitle">Veja o App em <span class="text-gradient">Ação</span></h2>
+                    <p class="text-lg text-text-muted" data-translate="videoSectionSubtitle">Confira como nossa interface limpa e intuitiva funciona em tempo real durante o jogo.</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                    <div class="glass-card p-6 sm:p-8 animate-on-scroll">
-                        <div class="text-5xl mb-4 text-gradient">01</div>
-                        <h3 class="text-2xl font-bold mb-2" data-translate="step1Title">Conecte seu ID</h3>
-                        <p class="text-text-muted" data-translate="step1Text">Vincule seu ID de jogador de forma segura à nossa rede de inteligência. Sua identidade permanece anônima e criptografada.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="video-card animate-on-scroll" data-video-id="Yqm3FjmNQOo">
+                        <img src="https://i.ytimg.com/vi/Yqm3FjmNQOo/hqdefault.jpg" alt="Vídeo do app em ação 1" class="w-full h-auto">
+                        <div class="play-icon"><i class="fas fa-play"></i></div>
                     </div>
-                    <div class="glass-card p-6 sm:p-8 animate-on-scroll" style="transition-delay: 0.2s;">
-                        <div class="text-5xl mb-4 text-gradient">02</div>
-                        <h3 class="text-2xl font-bold mb-2" data-translate="step2Title">Análise do Fluxo de Dados</h3>
-                        <p class="text-text-muted" data-translate="step2Text">Nossos servidores interceptam e decodificam os pacotes de dados brutos do jogo da sua mesa em tempo real, antes que cheguem ao seu dispositivo.</p>
-                    </div>
-                    <div class="glass-card p-6 sm:p-8 animate-on-scroll" style="transition-delay: 0.4s;">
-                        <div class="text-5xl mb-4 text-gradient">03</div>
-                        <h3 class="text-2xl font-bold mb-2" data-translate="step3Title">Domine com Informação</h3>
-                        <p class="text-text-muted" data-translate="step3Text">As cartas dos oponentes e estatísticas chave são retransmitidas para um overlay externo elegante, dando-lhe informação perfeita para tomar decisões vencedoras.</p>
+                    <div class="video-card animate-on-scroll" data-video-id="Ec--UP6IHuw" style="transition-delay: 0.2s;">
+                        <img src="https://i.ytimg.com/vi/Ec--UP6IHuw/hqdefault.jpg" alt="Vídeo do app em ação 2" class="w-full h-auto">
+                        <div class="play-icon"><i class="fas fa-play"></i></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Get Access Section -->
-        <section id="get-access" class="py-20 md:py-32 bg-color-surface">
-            <div class="container mx-auto px-4">
+        <!-- Security Guarantee -->
+        <section class="py-20 md:py-28 bg-color-surface">
+             <div class="container mx-auto px-4">
                  <div class="text-center max-w-3xl mx-auto">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-4" data-translate="pricingTitle">Obtenha Sua <span class="text-gradient">Vantagem Estratégica</span></h2>
-                    <p class="text-lg text-text-muted mb-8" data-translate="pricingTagline">Investimento único para acesso vitalício. O preço é calculado dinamicamente com base no app selecionado e na sua região para garantir o valor justo.</p>
-                    <div class="mt-4 text-sm text-yellow-400 font-semibold" id="countdown-container">
-                        <span data-translate="offerEnds">OFERTA POR TEMPO LIMITADO TERMINA EM:</span>
-                        <span id="countdown-timer" class="text-lg tabular-nums font-mono ml-2"></span>
-                    </div>
-                    <div class="mt-8">
-                        <button id="start-purchase-button" class="cta-button text-xl font-bold py-4 px-10 rounded-lg" data-translate="heroCta">Desbloquear Minha Vantagem</button>
-                    </div>
-                </div>
-            </div>
+                     <div class="text-6xl text-green-400 mb-6"><i class="fas fa-shield-alt"></i></div>
+                     <h2 class="text-4xl md:text-5xl font-bold mb-4" data-translate="securityTitle">Garantia de Segurança Total</h2>
+                     <p class="text-lg text-text-muted" data-translate="securityText">Sem root. Sem jailbreak. Nossa tecnologia de nível de servidor é <strong>completamente indetectável</strong>. Para os aplicativos de poker, sua atividade é idêntica à de um jogador comum. Jogue com 100% de confiança e anonimato.</p>
+                 </div>
+             </div>
         </section>
 
         <!-- Testimonials -->
-        <section id="testimonials" class="py-20 md:py-32">
+        <section id="testimonials" class="py-20 md:py-28">
             <div class="container mx-auto px-4">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-4" data-translate="testimonialsTitle">Não Acredite Apenas em Nossas Palavras</h2>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4" data-translate="testimonialsTitle">Resultados Reais de Clientes</h2>
                 </div>
                 <div id="testimonials-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                     <!-- Testimonials will be injected by JS -->
+                      <!-- Testimonials will be injected by JS -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Get Access Section -->
+        <section id="get-access" class="py-20 md:py-28 bg-color-surface">
+            <div class="container mx-auto px-4">
+                <div id="checkout-section" class="max-w-3xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-4" data-translate="checkoutTitle">Libere Sua <span class="text-gradient">Vantagem Agora</span></h2>
+                        <p class="text-lg text-text-muted" data-translate="checkoutSubtitle">Sua licença anual garante 12 meses de acesso, atualizações e suporte prioritário.</p>
+                    </div>
+                    
+                    <div class="glass-card p-6 md:p-8">
+                        <!-- Step 1: Email & Country Capture -->
+                        <div id="step1-capture">
+                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="email-input" class="block mb-2 text-sm font-medium" data-translate="emailLabel">Seu Melhor Email</label>
+                                    <input type="email" id="email-input" class="w-full rounded-lg p-3" placeholder="voce@email.com">
+                                </div>
+                                <div>
+                                    <label for="country-select" class="block mb-2 text-sm font-medium" data-translate="countryLabel">Seu País</label>
+                                    <select id="country-select" class="w-full rounded-lg p-3"></select>
+                                </div>
+                            </div>
+                            <button id="continue-to-config-btn" class="w-full cta-button font-bold text-white py-4 rounded-lg text-xl mt-6" data-translate="continueButton">Continuar</button>
+                            <p id="capture-error" class="text-red-400 text-center text-sm mt-2 h-4"></p>
+                        </div>
+
+                        <!-- Step 2: Configuration -->
+                        <div id="step2-config" style="display: none;">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="app-select" class="block mb-2 text-sm font-medium" data-translate="appLabel">Aplicativo de Poker</label>
+                                    <select id="app-select" class="w-full rounded-lg p-3"></select>
+                                </div>
+                                <div>
+                                    <label class="block mb-2 text-sm font-medium" data-translate="platformLabel">Sua Plataforma</label>
+                                    <div class="flex rounded-lg h-[48px]">
+                                        <button class="platform-btn flex-1 p-3 rounded-l-lg" data-platform="Android"><i class="fab fa-android mr-2"></i>Android</button>
+                                        <button class="platform-btn flex-1 p-3 rounded-r-lg" data-platform="iOS"><i class="fab fa-apple mr-2"></i>iOS</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="price-container" class="text-center py-6 my-6 border-y border-gray-700" style="display: none;">
+                                <p class="text-text-muted text-sm" data-translate="priceDisplay">Preço da Licença de 12 Meses:</p>
+                                <p id="dynamic-price" class="text-5xl font-bold text-gradient"></p>
+                                <p id="dynamic-price-usd" class="text-sm text-text-muted"></p>
+                            </div>
+                            <button id="proceed-to-payment-btn" class="w-full cta-button font-bold text-white py-4 rounded-lg text-xl" disabled data-translate="payButton">Ir para Pagamento</button>
+                            <p id="config-error" class="text-red-400 text-center text-sm mt-2 h-4"></p>
+                        </div>
+
+                        <!-- Step 3: Payment -->
+                        <div id="step3-payment" style="display: none;">
+                            <!-- Payment content will be injected here -->
+                        </div>
+                        
+                        <!-- Step 4: Activation -->
+                        <div id="step4-activation" style="display: none;" class="text-center">
+                            <div class="text-6xl text-yellow-400 mb-4"><i class="fas fa-hourglass-half"></i></div>
+                            <h3 class="text-3xl font-bold" data-translate="finalTitle">Pagamento Pendente</h3>
+                            <p class="text-text-muted mt-2 mb-6" data-translate="finalSubtitle">Para ativar sua licença, envie seu ID de Ativação e o comprovante da transação para nosso suporte no Telegram.</p>
+                            <div class="bg-color-surface p-4 rounded-lg inline-block">
+                                <p class="text-sm text-text-muted" data-translate="yourId">Seu ID de Ativação Único:</p>
+                                <p id="activation-id" class="text-2xl font-mono text-accent"></p>
+                            </div>
+                            <div class="mt-4 text-yellow-400 font-semibold">
+                                <p data-translate="finalUrgency">🎉 Faltam só 30s para você estar vendo cartas dos oponentes. Clique e fale no Telegram AGORA para liberar o download.</p>
+                            </div>
+                            <a id="telegram-link" href="#" target="_blank" class="block w-full max-w-sm mx-auto cta-button font-bold text-white py-3 rounded-lg mt-6" data-translate="openTelegram">
+                                <i class="fab fa-telegram-plane mr-2"></i>Falar com Suporte no Telegram
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- FAQ Section -->
-        <section id="faq" class="py-20 md:py-32 bg-color-surface">
+        <section id="faq" class="py-20 md:py-28 bg-color-surface">
             <div class="container mx-auto px-4">
-                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12" data-translate="faqTitle">Esclarecendo as Dúvidas</h2>
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12" data-translate="faqTitle">Perguntas Frequentes</h2>
                 <div id="faq-container" class="max-w-3xl mx-auto space-y-4">
                     <!-- FAQ items will be injected by JS -->
                 </div>
@@ -277,11 +366,20 @@
         </div>
     </footer>
 
-    <!-- Dialog / Modal Container -->
-    <div id="dialog-container" class="fixed inset-0 z-[100] flex items-center justify-center p-4 hidden" style="background-color: rgba(5, 7, 13, 0.8); backdrop-filter: blur(10px);">
-        <!-- Dialog content will be injected here -->
+    <!-- Sticky Bottom Bar -->
+    <div id="sticky-bar" class="fixed bottom-0 w-full bg-yellow-400 text-black text-center py-3 font-bold z-50 flex items-center justify-center gap-4">
+        <span data-translate="stickyOffer">⚡ Oferta termina em <span id="sticky-countdown-timer"></span> —</span>
+        <a href="#get-access" class="underline" data-translate="stickyCta">Liberte sua vantagem agora!</a>
     </div>
     
+    <!-- Video Modal -->
+    <div id="video-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 hidden">
+        <div id="video-modal-content" class="relative w-full max-w-4xl">
+             <button id="close-video-modal" class="absolute -top-10 right-0 text-white text-4xl">&times;</button>
+             <div id="video-container" class="aspect-video"></div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script>
     // --- Data Objects ---
@@ -305,65 +403,40 @@
             navHowItWorks: "How It Works",
             navTestimonials: "Testimonials",
             navFaq: "FAQ",
-            getAccessButton: "Get Access",
-            heroTitle: "The Table is a Story.<br>We Let You Read The <span class=\"text-gradient\">Final Chapter</span> First.",
-            heroTagline: "Stop guessing. Start dominating. Our server-side intelligence platform gives you the ultimate edge by revealing opponent data in real-time across the world's top private poker apps.",
-            heroCta: "Unlock My Winning Edge",
-            supportedAppsTitle: "INTEGRATED WITH 12 OF THE WORLD'S LEADING PRIVATE CLUB PLATFORMS",
-            howItWorksTitle: "From Guesswork to <span class=\"text-gradient\">Certainty</span> in 3 Steps",
-            howItWorksTagline: "Our technology operates at the server level, ensuring it's powerful, secure, and completely undetectable.",
-            step1Title: "Connect Your ID",
-            step1Text: "Securely link your in-game Player ID to our intelligence network. Your identity remains anonymous and encrypted.",
-            step2Title: "Analyze Data Stream",
-            step2Text: "Our servers intercept and decrypt the raw game data packets for your table in real-time, before they reach your device.",
-            step3Title: "Dominate with Insight",
-            step3Text: "Opponent hole cards and key stats are relayed to a sleek, external overlay, giving you perfect information to make winning decisions.",
-            pricingTitle: "Get Your <span class=\"text-gradient\">Strategic Advantage</span>",
-            pricingTagline: "One-time investment for lifetime access. Pricing is dynamically calculated based on the selected app and your region to ensure fair value.",
-            offerEnds: "LIMITED-TIME OFFER ENDS IN:",
-            testimonialsTitle: "Don't Just Take Our Word For It",
-            testimonial1: `"I was a break-even player on PokerBROS for months. The first night with RevealIntel, I spotted a whale's obvious bluffing pattern and stacked him twice. It paid for itself in 30 minutes. Unbelievable."`,
-            testimonial1Author: "Marcus B.",
-            testimonial1Location: "Toronto, Canada",
-            testimonial2: `"The Suprema Poker games in my club are notoriously tough. This tool leveled the playing field entirely. Knowing when to make that hero call or huge fold because you have perfect information is a feeling I can't describe. My bankroll has tripled."`,
-            testimonial2Author: "Gabriel S.",
-            testimonial2Location: "São Paulo, Brazil",
-            testimonial3: `"As someone who plays on multiple apps, the server-side analysis is seamless and I've had zero performance or security issues. This isn't a hack; it's professional-grade intelligence."`,
-            testimonial3Author: "Alexei V.",
-            testimonial3Location: "Tallinn, Estonia",
-            faqTitle: "Clearing the Air",
-            faq1Question: "Is this truly undetectable and safe?",
-            faq1Answer: "100%. Our system is fundamentally different from client-side hacks. We analyze data at the server-relay level, meaning nothing is installed or modified on your device or within the app's files. To the poker app, your activity is indistinguishable from a regular player.",
-            faq2Question: "Is this a one-time payment?",
-            faq2Answer: "Yes. All plans are a single, one-time payment for lifetime access to the selected app. This includes all future updates, security patches, and platform integrations for that app.",
-            faq3Question: "Why use cryptocurrency for payment?",
-            faq3Answer: "For your privacy and ours. Crypto payments are decentralized, secure, and ensure total anonymity for both parties. It's the standard for secure digital tools.",
-            faq4Question: "How quickly is my access activated?",
-            faq4Answer: "Activation is rapid. Once your payment is confirmed on the blockchain, you contact our 24/7 support on Telegram with your unique transaction details. They will verify and provision your access, typically within 5-10 minutes.",
-            footerDisclaimer: "Disclaimer: This is a professional strategic tool. Use it responsibly. We are not liable for any actions taken on third-party platforms. Be aware of and respect the terms of service of any app you use.",
-
-            // Purchase Flow
-            purchaseTitle: "Configure Your Access",
-            emailLabel: "Your Email Address",
-            emailPlaceholder: "you@email.com",
+            navCta: "Get My Advantage",
+            heroTitle: "See Your Opponents' Cards On Your Phone",
+            heroSubtitle: "Compatible with PokerBROS, Suprema, PPPoker & more. 5-min setup. No root. Fully undetectable.",
+            heroCta: "Unlock My License Now",
+            howItWorksTitle: "Your Advantage in <span class=\"text-gradient\">3 Steps</span>",
+            step1Title: "1. Unlock Your License",
+            step1Text: "Choose your app and pay with crypto, 100% anonymous and secure.",
+            step2Title: "2. Activate on Telegram",
+            step2Text: "Contact our support with your purchase ID to receive your custom download.",
+            step3Title: "3. Download & Dominate",
+            step3Text: "Install the app on your phone (Android/iOS) and start seeing cards in minutes.",
+            videoSectionTitle: "See the App in <span class=\"text-gradient\">Action</span>",
+            videoSectionSubtitle: "Check out how our clean and intuitive interface works in real-time during gameplay.",
+            securityTitle: "Total Security Guarantee",
+            securityText: "No root. No jailbreak. Our server-level technology is <strong>completely undetectable</strong>. To the poker apps, your activity is identical to a regular player. Play with 100% confidence and anonymity.",
+            testimonialsTitle: "Real Results from Clients",
+            testimonial1: "This is insane. Paid for itself in one session against a fish who kept overbetting. Thanks!",
+            testimonial2: "I was skeptical, but this is the real deal. The overlay is clean and the support helped me install it in minutes. My win rate on Suprema has skyrocketed.",
+            testimonial3: "Finally, a tool that works on iOS without any complicated stuff. Seeing the villains' bluffs is priceless.",
+            checkoutTitle: "Unlock Your <span class=\"text-gradient\">Advantage Now</span>",
+            checkoutSubtitle: "Your annual license grants 12 months of access, updates, and priority support.",
+            emailLabel: "Your Best Email",
             countryLabel: "Your Country",
-            platformLabel: "Your Platform",
+            continueButton: "Continue",
+            captureError: "Please enter a valid email and select a country.",
             appLabel: "Poker Application",
+            platformLabel: "Your Platform",
             selectPlaceholder: "Select...",
-            priceDisplay: "Lifetime Access Price:",
+            priceDisplay: "12-Month License Price:",
             priceUsdApprox: "(approx. {PRICE} USD)",
-            nextButton: "Next",
-            backButton: "Back",
             payButton: "Proceed to Payment",
-            
-            emailValidationError: "Please enter a valid email.",
-            countryValidationError: "Please select a country.",
-            platformValidationError: "Please select a platform.",
-            appValidationError: "Please select an app.",
-
+            configError: "Please select an app and platform.",
             paymentMethodTitle: "Select Payment Method",
             paymentMethodTagline: "Choose your preferred cryptocurrency.",
-            
             paymentTitle: "Complete Your Secure Payment",
             paymentTagline: "Send the exact crypto amount. Your unique cents value instantly identifies your payment.",
             amountToSend: "Amount to Send:",
@@ -371,87 +444,86 @@
             copyAddress: "Copy Address",
             copied: "Copied!",
             paymentDone: "I Have Sent The Payment",
-
-            finalTitle: "Activation Pending",
-            finalTagline: "Your final step. Send your unique ID to our support team on Telegram to receive your access credentials within minutes.",
+            finalTitle: "Payment Pending",
+            finalSubtitle: "To activate your license, send your Activation ID and the transaction proof to our support on Telegram.",
             yourId: "Your Unique Activation ID:",
+            finalUrgency: "🎉 You are just 30 seconds away from seeing your opponents' cards. Click and talk on Telegram NOW to release the download.",
             openTelegram: "Contact Support on Telegram",
+            faqTitle: "Frequently Asked Questions",
+            faq1Question: "Is this truly undetectable and safe?",
+            faq1Answer: "100%. Our system is fundamentally different from client-side hacks. We analyze data at the server-relay level, meaning nothing is installed or modified on your device or within the app's files. To the poker app, your activity is indistinguishable from a regular player.",
+            faq2Question: "Why is the app only available after payment?",
+            faq2Answer: "For your protection and ours. Each license is tied to a unique ID and the app binary is generated on-demand for you. This prevents unauthorized copies that could compromise your security and ensures you receive a safe, personalized version. We provide full support until you are up and running.",
+            faq3Question: "What does my 12-month license include?",
+            faq3Answer: "Your annual license gives you 12 months of full access to the tool for your selected app, including all software updates, security patches, and new feature releases during that period. You also get priority customer support.",
+            faq4Question: "How quickly is my access activated?",
+            faq4Answer: "Activation is rapid. Once your payment is confirmed, contact our 24/7 support on Telegram with your unique ID. They will verify and provision your personalized download, typically within 5-10 minutes.",
+            footerDisclaimer: "Disclaimer: This is a professional strategic tool. Use it responsibly. We are not liable for any actions taken on third-party platforms. Be aware of and respect the terms of service of any app you use.",
+            stickyOffer: "⚡ Offer ends in <span id=\"sticky-countdown-timer\"></span> —",
+            stickyCta: "Unlock your advantage now!",
         },
         pt: {
             navHowItWorks: "Como Funciona",
             navTestimonials: "Depoimentos",
             navFaq: "FAQ",
-            getAccessButton: "Obter Acesso",
-            heroTitle: "A Mesa é uma História.<br>Nós Deixamos Você Ler o <span class=\"text-gradient\">Capítulo Final</span> Primeiro.",
-            heroTagline: "Pare de adivinhar. Comece a dominar. Nossa plataforma de inteligência de servidor oferece a vantagem definitiva, revelando dados dos oponentes em tempo real nos principais aplicativos de poker privados do mundo.",
-            heroCta: "Desbloquear Minha Vantagem",
-            supportedAppsTitle: "INTEGRADO COM 12 DAS PRINCIPAIS PLATAFORMAS DE CLUBES PRIVADOS DO MUNDO",
-            howItWorksTitle: "Da Incerteza à <span class=\"text-gradient\">Certeza</span> em 3 Passos",
-            howItWorksTagline: "Nossa tecnologia opera a nível de servidor, garantindo poder, segurança e sendo completamente indetectável.",
-            step1Title: "Conecte seu ID",
-            step1Text: "Vincule seu ID de jogador de forma segura à nossa rede de inteligência. Sua identidade permanece anônima e criptografada.",
-            step2Title: "Análise do Fluxo de Dados",
-            step2Text: "Nossos servidores interceptam e decodificam os pacotes de dados brutos do jogo da sua mesa em tempo real, antes que cheguem ao seu dispositivo.",
-            step3Title: "Domine com Informação",
-            step3Text: "As cartas dos oponentes e estatísticas chave são retransmitidas para um overlay externo elegante, dando-lhe informação perfeita para tomar decisões vencedoras.",
-            pricingTitle: "Obtenha Sua <span class=\"text-gradient\">Vantagem Estratégica</span>",
-            pricingTagline: "Investimento único para acesso vitalício. O preço é calculado dinamicamente com base no app selecionado e na sua região para garantir o valor justo.",
-            offerEnds: "OFERTA POR TEMPO LIMITADO TERMINA EM:",
-            testimonialsTitle: "Não Acredite Apenas em Nossas Palavras",
-            testimonial1: `"Eu era um jogador mediano no PokerBROS há meses. Na primeira noite com o RevealIntel, identifiquei o padrão de blefe óbvio de um 'baleia' e tirei todo o seu stack duas vezes. O app se pagou em 30 minutos. Inacreditável."`,
-            testimonial1Author: "Marcus B.",
-            testimonial1Location: "Toronto, Canadá",
-            testimonial2: `"Os jogos de Suprema Poker no meu clube são notoriamente difíceis. Esta ferramenta nivelou o jogo completamente. Saber quando dar aquele 'hero call' ou fazer um 'hero fold' gigante porque você tem a informação perfeita é uma sensação indescritível. Meu bankroll triplicou."`,
-            testimonial2Author: "Gabriel S.",
-            testimonial2Location: "São Paulo, Brasil",
-            testimonial3: `"Como alguém que joga em vários aplicativos, a análise do lado do servidor é perfeita e não tive nenhum problema de desempenho ou segurança. Isso não é um hack; é inteligência de nível profissional."`,
-            testimonial3Author: "Alexei V.",
-            testimonial3Location: "Tallinn, Estônia",
-            faqTitle: "Esclarecendo as Dúvidas",
-            faq1Question: "Isso é verdadeiramente indetectável e seguro?",
-            faq1Answer: "100%. Nosso sistema é fundamentalmente diferente dos hacks do lado do cliente. Analisamos os dados no nível do servidor-relé, o que significa que nada é instalado ou modificado em seu dispositivo ou nos arquivos do aplicativo. Para o app de poker, sua atividade é indistinguível da de um jogador regular.",
-            faq2Question: "Este é um pagamento único?",
-            faq2Answer: "Sim. Todos os planos são um pagamento único para acesso vitalício ao aplicativo selecionado. Isso inclui todas as futuras atualizações, patches de segurança e integrações de plataforma para esse app.",
-            faq3Question: "Por que usar criptomoeda para o pagamento?",
-            faq3Answer: "Para a sua e a nossa privacidade. Pagamentos em cripto são descentralizados, seguros e garantem anonimato total para ambas as partes. É o padrão para ferramentas digitais seguras.",
-            faq4Question: "Quão rápido meu acesso é ativado?",
-            faq4Answer: "A ativação é rápida. Assim que seu pagamento for confirmado na blockchain, você entra em contato com nosso suporte 24/7 no Telegram com os detalhes de sua transação única. Eles verificarão e provisionarão seu acesso, geralmente em 5 a 10 minutos.",
-            footerDisclaimer: "Aviso: Esta é uma ferramenta estratégica profissional. Use-a com responsabilidade. Não nos responsabilizamos por quaisquer ações tomadas em plataformas de terceiros. Esteja ciente e respeite os termos de serviço de qualquer aplicativo que você usar.",
-            
-            // Purchase Flow
-            purchaseTitle: "Configure Seu Acesso",
-            emailLabel: "Seu Endereço de Email",
-            emailPlaceholder: "voce@email.com",
+            navCta: "Quero Minha Vantagem",
+            heroTitle: "Veja as Cartas dos Oponentes no Seu Celular",
+            heroSubtitle: "Compatível com PokerBROS, Suprema, PPPoker e mais. Instalação em 5 min. Sem root. Totalmente indetectável.",
+            heroCta: "Quero Liberar Minha Licença Agora",
+            howItWorksTitle: "Sua Vantagem em <span class=\"text-gradient\">3 Passos</span>",
+            step1Title: "1. Libere sua Licença",
+            step1Text: "Escolha seu app e pague com cripto de forma 100% anônima e segura.",
+            step2Title: "2. Ative no Telegram",
+            step2Text: "Fale com nosso suporte com seu ID de compra para receber seu download personalizado.",
+            step3Title: "3. Baixe e Domine",
+            step3Text: "Instale o app no seu celular (Android/iOS) e comece a ver as cartas em minutos.",
+            videoSectionTitle: "Veja o App em <span class=\"text-gradient\">Ação</span>",
+            videoSectionSubtitle: "Confira como nossa interface limpa e intuitiva funciona em tempo real durante o jogo.",
+            securityTitle: "Garantia de Segurança Total",
+            securityText: "Sem root. Sem jailbreak. Nossa tecnologia de nível de servidor é <strong>completamente indetectável</strong>. Para os aplicativos de poker, sua atividade é idêntica à de um jogador comum. Jogue com 100% de confiança e anonimato.",
+            testimonialsTitle: "Resultados Reais de Clientes",
+            testimonial1: "Isso é insano. Se pagou em uma única sessão contra um fish que ficava apostando demais. Valeu!",
+            testimonial2: "Eu estava cético, mas o negócio é real. O overlay é limpo e o suporte me ajudou a instalar em minutos. Minha taxa de vitória no Suprema disparou.",
+            testimonial3: "Finalmente uma ferramenta que funciona no iOS sem nenhuma coisa complicada. Ver os blefes dos vilões não tem preço.",
+            checkoutTitle: "Libere Sua <span class=\"text-gradient\">Vantagem Agora</span>",
+            checkoutSubtitle: "Sua licença anual garante 12 meses de acesso, atualizações e suporte prioritário.",
+            emailLabel: "Seu Melhor Email",
             countryLabel: "Seu País",
-            platformLabel: "Sua Plataforma",
+            continueButton: "Continuar",
+            captureError: "Por favor, insira um email válido e selecione um país.",
             appLabel: "Aplicativo de Poker",
+            platformLabel: "Sua Plataforma",
             selectPlaceholder: "Selecione...",
-            priceDisplay: "Preço do Acesso Vitalício:",
+            priceDisplay: "Preço da Licença de 12 Meses:",
             priceUsdApprox: "(aprox. {PRICE} USD)",
-            nextButton: "Próximo",
-            backButton: "Voltar",
-            payButton: "Prosseguir para Pagamento",
-
-            emailValidationError: "Por favor, insira um email válido.",
-            countryValidationError: "Por favor, selecione um país.",
-            platformValidationError: "Por favor, selecione uma plataforma.",
-            appValidationError: "Por favor, selecione um aplicativo.",
-
+            payButton: "Ir para Pagamento",
+            configError: "Por favor, selecione um aplicativo e plataforma.",
             paymentMethodTitle: "Selecione o Método de Pagamento",
             paymentMethodTagline: "Escolha sua criptomoeda preferida.",
-
             paymentTitle: "Complete seu Pagamento Seguro",
-            paymentTagline: "Insira seu e-mail e envie o valor exato em cripto. Os centavos únicos no valor identificam instantaneamente seu pagamento.",
+            paymentTagline: "Envie o valor exato em cripto. Os centavos únicos no valor identificam instantaneamente seu pagamento.",
             amountToSend: "Valor a Enviar:",
             network: "Rede:",
             copyAddress: "Copiar Endereço",
             copied: "Copiado!",
             paymentDone: "Eu Enviei o Pagamento",
-
-            finalTitle: "Ativação Pendente",
-            finalTagline: "Seu passo final. Envie seu ID único para nossa equipe de suporte no Telegram para receber suas credenciais de acesso em minutos.",
+            finalTitle: "Pagamento Pendente",
+            finalSubtitle: "Para ativar sua licença, envie seu ID de Ativação e o comprovante da transação para nosso suporte no Telegram.",
             yourId: "Seu ID de Ativação Único:",
-            openTelegram: "Contatar Suporte no Telegram",
+            finalUrgency: "🎉 Faltam só 30s para você estar vendo cartas dos oponentes. Clique e fale no Telegram AGORA para liberar o download.",
+            openTelegram: "Falar com Suporte no Telegram",
+            faqTitle: "Perguntas Frequentes",
+            faq1Question: "Isso é verdadeiramente indetectável e seguro?",
+            faq1Answer: "100%. Nosso sistema é fundamentalmente diferente de hacks do lado do cliente. Analisamos os dados no nível do servidor-relé, o que significa que nada é instalado ou modificado em seu dispositivo ou nos arquivos do aplicativo. Para o app de poker, sua atividade é indistinguível da de um jogador regular.",
+            faq2Question: "Por que o app é liberado só após o pagamento?",
+            faq2Answer: "Para sua proteção e a nossa. Cada licença é vinculada a um ID exclusivo e o binário do app é gerado sob demanda para você. Isso evita cópias não autorizadas que poderiam comprometer sua segurança e garante que você receba uma versão segura e personalizada. Damos suporte total até você estar com tudo funcionando.",
+            faq3Question: "O que minha licença de 12 meses inclui?",
+            faq3Answer: "Sua licença anual lhe dá 12 meses de acesso completo à ferramenta para o aplicativo selecionado, incluindo todas as atualizações de software, patches de segurança e lançamentos de novos recursos durante esse período. Você também recebe suporte ao cliente prioritário.",
+            faq4Question: "Quão rápido meu acesso é ativado?",
+            faq4Answer: "A ativação é rápida. Assim que seu pagamento for confirmado, contate nosso suporte 24/7 no Telegram com seu ID único. Eles verificarão e liberarão seu download personalizado, geralmente em 5 a 10 minutos.",
+            footerDisclaimer: "Aviso: Esta é uma ferramenta estratégica profissional. Use-a com responsabilidade. Não nos responsabilizamos por quaisquer ações tomadas em plataformas de terceiros. Esteja ciente e respeite os termos de serviço de qualquer aplicativo que você usar.",
+            stickyOffer: "⚡ Oferta termina em <span id=\"sticky-countdown-timer\"></span> —",
+            stickyCta: "Liberte sua vantagem agora!",
         }
     };
 
@@ -461,16 +533,12 @@
     const App = {
         state: {
             lang: 'en',
-            userCountryCode: null,
-            userCurrency: 'USD',
-            exchangeRates: { 'USD': 1.0 },
-            dailySalaryBonus: 0,
             countdownInterval: null,
-            purchaseStep: 1,
+            exchangeRates: { 'USD': 1.0 },
         },
         purchase: {
-            email: localStorage.getItem('userEmail') || '',
-            country: null,
+            email: localStorage.getItem('revealIntelEmail') || '',
+            country: localStorage.getItem('revealIntelCountry') || null,
             platform: null,
             selectedApp: null,
             uniqueId: null,
@@ -479,7 +547,6 @@
         },
 
         async init() {
-            this.calculateDailySalaryBonus();
             await this.fetchInitialData();
             this.setLanguage(this.detectLanguage());
             
@@ -487,26 +554,23 @@
             this.initEventListeners();
             this.initScrollAnimations();
             this.initializeCountdown();
-        },
-
-        // --- Data & State Management ---
-        calculateDailySalaryBonus() {
-            const baseDate = new Date('2024-01-01T00:00:00Z');
-            const today = new Date();
-            const diffTime = Math.abs(today - baseDate);
-            const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-            this.state.dailySalaryBonus = diffDays * 0.50;
+            this.populateCheckoutForm();
         },
 
         async fetchInitialData() {
-            try {
-                const geoResponse = await fetch('https://ipapi.co/json/');
-                if (geoResponse.ok) {
-                    const geoData = await geoResponse.json();
-                    this.state.userCountryCode = geoData.country_code;
-                    this.purchase.country = geoData.country_code;
+            if (!this.purchase.country) {
+                try {
+                    const geoResponse = await fetch('https://ipapi.co/json/');
+                    if (geoResponse.ok) {
+                        const geoData = await geoResponse.json();
+                        this.purchase.country = geoData.country_code;
+                    }
+                } catch (error) { 
+                    console.warn("Could not fetch IP geolocation data. Defaulting to US.");
+                    this.purchase.country = 'US';
                 }
-            } catch (error) { console.warn("Could not fetch IP geolocation data."); }
+            }
+            // No need to save to localStorage here, will be saved upon user interaction
 
             try {
                 const ratesResponse = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
@@ -518,7 +582,7 @@
         },
 
         detectLanguage() {
-            const countryData = countrySalaryData[this.state.userCountryCode];
+            const countryData = countrySalaryData[this.purchase.country];
             if (countryData?.l && translations[countryData.l]) return countryData.l;
             const browserLang = navigator.language.split('-')[0];
             return translations[browserLang] ? browserLang : 'en';
@@ -529,48 +593,45 @@
             document.documentElement.lang = lang;
             document.querySelectorAll("[data-translate]").forEach(el => {
                 const key = el.dataset.translate;
-                el.innerHTML = this.getTranslatedString(key);
+                if(translations[this.state.lang]?.[key]) {
+                    el.innerHTML = this.getTranslatedString(key);
+                } else if (translations['en']?.[key]) {
+                    el.innerHTML = this.getTranslatedString(key, {}, 'en');
+                }
             });
         },
         
-        getTranslatedString(key, replacements = {}) {
-            let translation = translations[this.state.lang]?.[key] || translations['en']?.[key] || '';
+        getTranslatedString(key, replacements = {}, lang = this.state.lang) {
+            let translation = translations[lang]?.[key] || translations['en']?.[key] || '';
             Object.entries(replacements).forEach(([p, v]) => {
                 translation = translation.replace(`{${p.toUpperCase()}}`, v);
             });
             return translation;
         },
         
-        // --- UI Population & Updates ---
         populateStaticContent() {
             document.getElementById('current-year').textContent = new Date().getFullYear();
-            
-            const scroller = document.getElementById('app-logo-scroller');
-            const logos = supportedApps.map(app => `
-                <div class="flex-shrink-0 flex items-center justify-center h-10" title="${app.name}">
-                    <img src="${app.logo}" alt="${app.name} Logo" class="max-h-full w-auto object-contain opacity-70 hover:opacity-100 transition duration-300 rounded-md">
-                </div>
-            `).join('');
-            scroller.innerHTML = logos + logos; // Duplicate for seamless scroll
 
             const testimonialsContainer = document.getElementById('testimonials-container');
-            testimonialsContainer.innerHTML = [1, 2, 3].map(i => `
-                <div class="glass-card p-8 animate-on-scroll">
-                    <p class="text-text-muted mb-6">“${this.getTranslatedString(`testimonial${i}`)}”</p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://ui-avatars.com/api/?name=${this.getTranslatedString(`testimonial${i}Author`).replace(' ','+')}&background=252F3F&color=E5E7EB" class="w-12 h-12 rounded-full" alt="Avatar">
-                        <div>
-                            <p class="font-bold">${this.getTranslatedString(`testimonial${i}Author`)}</p>
-                            <p class="text-sm text-text-muted">${this.getTranslatedString(`testimonial${i}Location`)}</p>
+            testimonialsContainer.innerHTML = [1, 2, 3].map((i) => `
+                <div class="animate-on-scroll">
+                    <div class="testimonial-bubble">
+                        <p class="text-text-light">${this.getTranslatedString(`testimonial${i}`)}</p>
+                    </div>
+                    <div class="mt-4 flex items-center gap-3">
+                        <img src="https://ui-avatars.com/api/?name=CV&background=4F46E5&color=FFFFFF&bold=true" class="w-12 h-12 rounded-full" alt="Avatar">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            <span class="font-bold text-text-light">Cliente Verificado</span>
                         </div>
                     </div>
                 </div>
-             `).join('');
+            `).join('');
 
             const faqContainer = document.getElementById('faq-container');
             faqContainer.innerHTML = [1, 2, 3, 4].map(i => `
-                <details class="faq-item animate-on-scroll">
-                    <summary class="font-semibold text-lg list-none relative pr-8 py-4">
+                <details class="faq-item animate-on-scroll glass-card px-6">
+                    <summary class="font-semibold text-lg list-none relative pr-8 py-4 cursor-pointer">
                         ${this.getTranslatedString(`faq${i}Question`)}
                         <i class="fas fa-chevron-down absolute right-0 top-1/2 -translate-y-1/2 transition-transform duration-300"></i>
                     </summary>
@@ -579,13 +640,35 @@
             `).join('');
         },
 
-        // --- Event Listeners & Animations ---
         initEventListeners() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            document.getElementById('mobile-menu-button').addEventListener('click', () => mobileMenu.classList.replace('-translate-y-full', 'translate-y-0'));
-            document.getElementById('mobile-menu-close').addEventListener('click', () => mobileMenu.classList.replace('translate-y-0', '-translate-y-full'));
-            mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.replace('translate-y-0', '-translate-y-full')));
-            document.getElementById('start-purchase-button').addEventListener('click', () => this.startPurchaseFlow());
+            document.querySelectorAll('.video-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const videoId = card.dataset.videoId;
+                    this.openVideoModal(videoId);
+                });
+            });
+        },
+        
+        openVideoModal(videoId) {
+            const modal = document.getElementById('video-modal');
+            const videoContainer = document.getElementById('video-container');
+            videoContainer.innerHTML = `
+                <div class="relative w-full h-full" style="padding-bottom: 56.25%;">
+                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="absolute inset-0 w-full h-full cursor-default"></div>
+                </div>
+            `;
+            modal.classList.remove('hidden');
+            document.getElementById('close-video-modal').addEventListener('click', this.closeVideoModal);
+            modal.addEventListener('click', (e) => {
+                if(e.target.id === 'video-modal') this.closeVideoModal();
+            });
+        },
+
+        closeVideoModal() {
+            const modal = document.getElementById('video-modal');
+            document.getElementById('video-container').innerHTML = '';
+            modal.classList.add('hidden');
         },
 
         initScrollAnimations() {
@@ -611,258 +694,175 @@
                 localStorage.setItem('offerEndTime', offerEndTime.toString());
             }
             
-            let timer = Math.max(0, (parseInt(offerEndTime, 10) - now) / 1000);
-            const display = document.getElementById('countdown-timer');
-
-            this.state.countdownInterval = setInterval(() => {
-                if (timer <= 0) {
+            const updateTimers = () => {
+                const distance = parseInt(offerEndTime, 10) - new Date().getTime();
+                if (distance <= 0) {
                     clearInterval(this.state.countdownInterval);
-                    document.getElementById('countdown-container').style.display = 'none';
+                    document.getElementById('sticky-bar').style.display = 'none';
                     return;
                 }
-                let hours = String(parseInt(timer / 3600, 10)).padStart(2, '0');
-                let minutes = String(parseInt((timer % 3600) / 60, 10)).padStart(2, '0');
-                let seconds = String(parseInt(timer % 60, 10)).padStart(2, '0');
-                if (display) display.textContent = `${hours}:${minutes}:${seconds}`;
-                timer--;
-            }, 1000);
+                const hours = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+                const minutes = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+                const seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
+                const timeString = `${hours}:${minutes}:${seconds}`;
+                
+                const stickyTimer = document.getElementById('sticky-countdown-timer');
+                if (stickyTimer) stickyTimer.textContent = timeString;
+            };
+
+            this.state.countdownInterval = setInterval(updateTimers, 1000);
+            updateTimers();
         },
 
-        // --- Purchase Flow ---
-        startPurchaseFlow() {
-            this.state.purchaseStep = 1;
-            this.showPurchaseDialog();
-        },
+        // --- Checkout Flow ---
+        populateCheckoutForm() {
+            const countrySelect = document.getElementById('country-select');
+            const emailInput = document.getElementById('email-input');
+            
+            emailInput.value = this.purchase.email;
 
-        updatePurchaseDialog() {
-            const container = document.getElementById('dialog-content');
-            if (this.state.purchaseStep === 1) {
-                container.innerHTML = this.getStep1HTML();
-                this.attachStep1Listeners();
-            } else if (this.state.purchaseStep === 2) {
-                container.innerHTML = this.getStep2HTML();
-                this.attachStep2Listeners();
-            } else if (this.state.purchaseStep === 3) {
-                container.innerHTML = this.getStep3HTML();
-                this.attachStep3Listeners();
-            }
-        },
-
-        showPurchaseDialog() {
-            const dialogContainer = document.getElementById('dialog-container');
-            dialogContainer.innerHTML = `<div id="dialog-content" class="glass-card p-6 md:p-8 w-full max-w-md"></div>`;
-            this.updatePurchaseDialog();
-            dialogContainer.classList.remove('hidden');
-        },
-
-        closePurchaseDialog() {
-            document.getElementById('dialog-container').classList.add('hidden');
-        },
-
-        // Step 1: Registration
-        getStep1HTML() {
             const countryOptions = Object.keys(countrySalaryData).map(code => {
                 const name = new Intl.DisplayNames(['en'], { type: 'region' }).of(code);
                 return `<option value="${code}" ${this.purchase.country === code ? 'selected' : ''}>${name}</option>`;
             }).sort((a,b) => a.split('>')[1].localeCompare(b.split('>')[1])).join('');
+            countrySelect.innerHTML = countryOptions;
             
-            return `
-                <h3 class="text-2xl font-bold mb-2">${this.getTranslatedString('purchaseTitle')} (1/3)</h3>
-                <div class="space-y-4 mt-6">
-                    <div>
-                        <label for="email-input" class="block mb-2 text-sm font-medium">${this.getTranslatedString('emailLabel')}</label>
-                        <input type="email" id="email-input" class="bg-color-surface border-2 border-gray-600 text-white text-sm rounded-lg w-full p-2.5" placeholder="${this.getTranslatedString('emailPlaceholder')}" value="${this.purchase.email}">
-                        <p id="email-error" class="text-red-400 text-sm mt-1 h-4"></p>
-                    </div>
-                    <div>
-                        <label for="country-input" class="block mb-2 text-sm font-medium">${this.getTranslatedString('countryLabel')}</label>
-                        <select id="country-input" class="w-full bg-color-surface border-2 border-gray-600 rounded-lg p-3">${countryOptions}</select>
-                        <p id="country-error" class="text-red-400 text-sm mt-1 h-4"></p>
-                    </div>
-                    <button id="next-step-btn" class="w-full cta-button font-bold text-white py-3 rounded-lg">${this.getTranslatedString('nextButton')}</button>
-                </div>`;
+            if (this.purchase.email && this.purchase.country) {
+                this.handleCaptureStep(true); // Pass a flag to indicate it's an auto-run
+            }
+
+            document.getElementById('continue-to-config-btn').addEventListener('click', () => this.handleCaptureStep(false));
         },
 
-        attachStep1Listeners() {
-            document.getElementById('next-step-btn').addEventListener('click', () => {
-                const email = document.getElementById('email-input').value;
-                const country = document.getElementById('country-input').value;
-                let isValid = true;
-                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                    document.getElementById('email-error').textContent = this.getTranslatedString('emailValidationError');
-                    isValid = false;
-                } else { document.getElementById('email-error').textContent = ''; }
-                if (!country) {
-                    document.getElementById('country-error').textContent = this.getTranslatedString('countryValidationError');
-                    isValid = false;
-                } else { document.getElementById('country-error').textContent = ''; }
-
-                if (isValid) {
-                    this.purchase.email = email;
-                    this.purchase.country = country;
-                    localStorage.setItem('userEmail', email);
-                    this.state.purchaseStep = 2;
-                    this.updatePurchaseDialog();
-                }
-            });
+        handleCaptureStep(isAutoRun = false) {
+            const emailInput = document.getElementById('email-input');
+            const countrySelect = document.getElementById('country-select');
+            const captureError = document.getElementById('capture-error');
+            
+            const email = emailInput.value;
+            const country = countrySelect.value;
+            
+            if (!isAutoRun && (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || !country)) {
+                captureError.textContent = this.getTranslatedString('captureError');
+                return;
+            }
+            
+            this.purchase.email = email;
+            this.purchase.country = country;
+            localStorage.setItem('revealIntelEmail', email);
+            localStorage.setItem('revealIntelCountry', country);
+            
+            document.getElementById('step1-capture').style.display = 'none';
+            this.showConfigurationStep();
         },
 
-        // Step 2: Configuration
-        getStep2HTML() {
-            const appOptions = supportedApps.sort((a,b) => b.popularity - a.popularity).map(app => `<option value="${app.id}">${app.name}</option>`).join('');
-            return `
-                <h3 class="text-2xl font-bold mb-2">${this.getTranslatedString('purchaseTitle')} (2/3)</h3>
-                <div class="space-y-4 mt-6">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block mb-2 text-sm font-medium">${this.getTranslatedString('platformLabel')}</label>
-                            <div class="flex rounded-lg">
-                                <button class="platform-btn flex-1 p-3 rounded-l-lg" data-platform="Android"><i class="fab fa-android mr-2"></i>Android</button>
-                                <button class="platform-btn flex-1 p-3 rounded-r-lg" data-platform="iOS"><i class="fab fa-apple mr-2"></i>iOS</button>
-                            </div>
-                             <p id="platform-error" class="text-red-400 text-sm mt-1 h-4"></p>
-                        </div>
-                        <div>
-                            <label for="app-select" class="block mb-2 text-sm font-medium">${this.getTranslatedString('appLabel')}</label>
-                            <select id="app-select" class="w-full bg-color-surface border-2 border-gray-600 rounded-lg p-3">
-                                <option value="">${this.getTranslatedString('selectPlaceholder')}</option>
-                                ${appOptions}
-                            </select>
-                            <p id="app-error" class="text-red-400 text-sm mt-1 h-4"></p>
-                        </div>
-                    </div>
-                    <div id="price-container" class="text-center py-4 border-y border-gray-700" style="display: none;">
-                        <p class="text-text-muted text-sm">${this.getTranslatedString('priceDisplay')}</p>
-                        <p id="dynamic-price" class="text-4xl font-bold text-accent"></p>
-                        <p id="dynamic-price-usd" class="text-sm text-text-muted"></p>
-                    </div>
-                    <div class="flex gap-4">
-                        <button id="back-step-btn" class="w-1/3 bg-gray-600 hover:bg-gray-500 font-bold text-white py-3 rounded-lg">${this.getTranslatedString('backButton')}</button>
-                        <button id="pay-btn" class="w-2/3 cta-button font-bold text-white py-3 rounded-lg" disabled>${this.getTranslatedString('payButton')}</button>
-                    </div>
-                </div>`;
-        },
-
-        attachStep2Listeners() {
-            const platformBtns = document.querySelectorAll('.platform-btn');
+        showConfigurationStep() {
+            document.getElementById('step2-config').style.display = 'block';
             const appSelect = document.getElementById('app-select');
-            const priceContainer = document.getElementById('price-container');
-            const payButton = document.getElementById('pay-btn');
+            const appOptions = supportedApps.sort((a,b) => b.popularity - a.popularity)
+                .map(app => `<option value="${app.id}">${app.name}</option>`).join('');
+            appSelect.innerHTML = `<option value="">${this.getTranslatedString('selectPlaceholder')}</option>${appOptions}`;
 
-            platformBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    platformBtns.forEach(b => b.classList.remove('selected'));
-                    btn.classList.add('selected');
-                    this.purchase.platform = btn.dataset.platform;
-                    updatePrice();
-                });
-            });
-
-            const updatePrice = () => {
-                const appId = appSelect.value;
-                
-                if (this.purchase.platform && appId) {
-                    this.purchase.selectedApp = supportedApps.find(a => a.id === appId);
-
-                    const countryData = countrySalaryData[this.purchase.country];
-                    const currency = countryData.c;
-                    const baseSalary = countryData.s;
-                    const adjustedSalary = baseSalary + this.state.dailySalaryBonus;
-                    
-                    let priceRangeMin, priceRangeMax;
-                    // NEW PRICING LOGIC
-                    if (adjustedSalary <= 1000) {
-                        priceRangeMin = 0.3; priceRangeMax = 0.7;
-                    } else {
-                        priceRangeMin = 1.0; priceRangeMax = 2.5;
-                    }
-                    
-                    const finalMultiplier = priceRangeMin + (this.purchase.selectedApp.popularity * (priceRangeMax - priceRangeMin));
-                    const baseUsdPrice = adjustedSalary * finalMultiplier;
-                    
-                    const cappedPrice = Math.min(baseUsdPrice, 2999);
-
-                    this.purchase.uniqueId = Date.now().toString();
-                    this.purchase.finalPriceUSD = parseFloat(cappedPrice.toFixed(0)) + (parseInt(this.purchase.uniqueId.slice(-2)) / 100);
-                    
-                    const localPrice = this.purchase.finalPriceUSD * (this.state.exchangeRates[currency] || 1);
-                    
-                    document.getElementById('dynamic-price').textContent = new Intl.NumberFormat(this.state.lang, { style: 'currency', currency: currency }).format(localPrice);
-                    document.getElementById('dynamic-price-usd').textContent = this.getTranslatedString('priceUsdApprox', { PRICE: this.purchase.finalPriceUSD.toFixed(2) });
-                    priceContainer.style.display = 'block';
-                    payButton.disabled = false;
-                } else {
-                    priceContainer.style.display = 'none';
-                    payButton.disabled = true;
-                }
-            };
-
-            appSelect.addEventListener('change', updatePrice);
+            document.querySelectorAll('.platform-btn').forEach(btn => btn.addEventListener('click', () => {
+                document.querySelectorAll('.platform-btn').forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
+                this.purchase.platform = btn.dataset.platform;
+                this.updatePrice();
+            }));
             
-            document.getElementById('back-step-btn').addEventListener('click', () => {
-                this.state.purchaseStep = 1;
-                this.updatePurchaseDialog();
-            });
-
-            payButton.addEventListener('click', () => {
-                this.state.purchaseStep = 3;
-                this.updatePurchaseDialog();
-            });
+            appSelect.addEventListener('change', this.updatePrice.bind(this));
+            document.getElementById('proceed-to-payment-btn').addEventListener('click', this.showPaymentMethods.bind(this));
         },
 
-        // Step 3: Payment Method Selection
-        getStep3HTML() {
-            return `
-                <h3 class="text-2xl font-bold mb-2">${this.getTranslatedString('paymentMethodTitle')}</h3>
-                <p class="text-text-muted mb-6">${this.getTranslatedString('paymentMethodTagline')}</p>
+        updatePrice() {
+            const appSelect = document.getElementById('app-select');
+            const payButton = document.getElementById('proceed-to-payment-btn');
+            const priceContainer = document.getElementById('price-container');
+            
+            this.purchase.selectedApp = supportedApps.find(a => a.id === appSelect.value);
+            
+            if (this.purchase.platform && this.purchase.selectedApp) {
+                const countryData = countrySalaryData[this.purchase.country];
+                const currency = countryData.c;
+                const baseSalary = countryData.s;
+                
+                const dailySalaryBonus = (new Date() - new Date('2024-01-01')) / (1000 * 60 * 60 * 24) * 0.5;
+                const adjustedSalary = baseSalary + dailySalaryBonus;
+                
+                const priceRangeMin = adjustedSalary <= 1000 ? 0.3 : 1.0;
+                const priceRangeMax = adjustedSalary <= 1000 ? 0.7 : 2.5;
+                
+                const finalMultiplier = priceRangeMin + (this.purchase.selectedApp.popularity * (priceRangeMax - priceRangeMin));
+                const baseUsdPrice = adjustedSalary * finalMultiplier;
+                const cappedPrice = Math.min(baseUsdPrice, 2999);
+
+                this.purchase.uniqueId = Date.now().toString();
+                this.purchase.finalPriceUSD = parseFloat(cappedPrice.toFixed(0)) + (parseInt(this.purchase.uniqueId.slice(-2)) / 100);
+                
+                const localPrice = this.purchase.finalPriceUSD * (this.state.exchangeRates[currency] || 1);
+                
+                document.getElementById('dynamic-price').textContent = new Intl.NumberFormat(this.state.lang, { style: 'currency', currency: currency, minimumFractionDigits: 2 }).format(localPrice);
+                document.getElementById('dynamic-price-usd').textContent = this.getTranslatedString('priceUsdApprox', { PRICE: this.purchase.finalPriceUSD.toFixed(2) });
+                priceContainer.style.display = 'block';
+                payButton.disabled = false;
+            } else {
+                priceContainer.style.display = 'none';
+                payButton.disabled = true;
+            }
+        },
+
+        showPaymentMethods() {
+             if (!this.purchase.platform || !this.purchase.selectedApp) {
+                document.getElementById('config-error').textContent = this.getTranslatedString('configError');
+                return;
+            }
+
+            const paymentHTML = `
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold mb-2">${this.getTranslatedString('paymentMethodTitle')}</h3>
+                    <p class="text-text-muted mb-6">${this.getTranslatedString('paymentMethodTagline')}</p>
+                </div>
                 <div class="space-y-3">
                     <button class="crypto-btn w-full p-4 rounded-lg flex items-center justify-center gap-3" data-method="usdt">
-                        <img src="usdt.png" class="h-6 w-6 rounded-full">
+                        <img src="/usdt.png" class="h-6 w-6 rounded-full">
                         <span class="font-bold">USDT (TRC20)</span>
                     </button>
                     <button class="crypto-btn w-full p-4 rounded-lg flex items-center justify-center gap-3" data-method="btc">
-                        <img src="btc.png" class="h-6 w-6 rounded-full">
+                        <img src="/btc.png" class="h-6 w-6 rounded-full">
                         <span class="font-bold">Bitcoin (BTC)</span>
                     </button>
                     <button class="crypto-btn w-full p-4 rounded-lg flex items-center justify-center gap-3" data-method="eth">
-                        <img src="eth.png" class="h-6 w-6 rounded-full">
+                        <img src="/eth.png" class="h-6 w-6 rounded-full">
                         <span class="font-bold">Ethereum (ETH)</span>
                     </button>
-                </div>
-                 <div class="mt-6">
-                    <button id="back-step-btn" class="w-full bg-gray-600 hover:bg-gray-500 font-bold text-white py-3 rounded-lg">${this.getTranslatedString('backButton')}</button>
-                </div>
-            `;
-        },
+                </div>`;
+            
+            document.getElementById('step2-config').style.display = 'none';
+            const paymentContainer = document.getElementById('step3-payment');
+            paymentContainer.innerHTML = paymentHTML;
+            paymentContainer.style.display = 'block';
 
-        attachStep3Listeners() {
-            document.querySelectorAll('.crypto-btn').forEach(btn => {
+            paymentContainer.querySelectorAll('.crypto-btn').forEach(btn => {
                 btn.addEventListener('click', (e) => {
                     this.purchase.paymentMethod = e.currentTarget.dataset.method;
                     this.showPaymentScreen();
                 });
             });
-            document.getElementById('back-step-btn').addEventListener('click', () => {
-                this.state.purchaseStep = 2;
-                this.updatePurchaseDialog();
-            });
         },
 
-
-        // Final Payment Screen
         async showPaymentScreen() {
             const method = this.purchase.paymentMethod;
             const addresses = { usdt: "TXxRAVZP8fUJVm2yMTS8uei2AsgKtLviuK", btc: "bc1q983fl9ehgw88wqgs2k78vurrk2l2z6t6afphz3", eth: "0x9b5877A847BE203FCbA421194C83E0af6f686cC7" };
             const networks = { usdt: "TRC20", btc: "Bitcoin", eth: "Ethereum (ERC20)" };
             const cryptoIds = { btc: 'bitcoin', eth: 'ethereum' };
             const address = addresses[method];
-            const network = networks[method];
             
             let amountHTML = `<div class="h-10 flex items-center justify-center"><div class="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div></div>`;
             
             const content = `
-                <div class="glass-card p-6 md:p-8 w-full max-w-md text-center">
+                <div class="text-center">
                     <h3 class="text-2xl font-bold mb-2">${this.getTranslatedString('paymentTitle')}</h3>
+                    <p class="text-text-muted mb-4">${this.getTranslatedString('paymentTagline')}</p>
                     <div id="payment-details" class="my-4">
                         ${amountHTML}
                     </div>
@@ -876,12 +876,13 @@
                     <p id="copy-feedback" class="text-green-400 text-sm mt-2 h-4"></p>
                     <button id="payment-done-btn" class="w-full cta-button font-bold text-white py-3 rounded-lg mt-6">${this.getTranslatedString('paymentDone')}</button>
                 </div>`;
-            document.getElementById('dialog-content').innerHTML = content;
+            
+            const paymentContainer = document.getElementById('step3-payment');
+            paymentContainer.innerHTML = content;
             document.getElementById('payment-done-btn').addEventListener('click', () => this.showFinalStep());
 
-            // Fetch and display price
             if (method === 'usdt') {
-                amountHTML = `<p class="text-4xl font-bold text-accent tabular-nums">${this.purchase.finalPriceUSD.toFixed(2)} <span class="text-2xl">USDT</span></p><p class="text-sm text-text-muted">${this.getTranslatedString('network')} ${network}</p>`;
+                amountHTML = `<p class="text-4xl font-bold text-accent tabular-nums">${this.purchase.finalPriceUSD.toFixed(2)} <span class="text-2xl">USDT</span></p><p class="text-sm text-text-muted">${this.getTranslatedString('network')} ${networks[method]}</p>`;
                 document.getElementById('payment-details').innerHTML = amountHTML;
             } else {
                 try {
@@ -889,7 +890,7 @@
                     const data = await response.json();
                     const cryptoPrice = data[cryptoIds[method]].usd;
                     const cryptoAmount = (this.purchase.finalPriceUSD / cryptoPrice).toFixed(8);
-                    amountHTML = `<p class="text-4xl font-bold text-accent tabular-nums">${cryptoAmount} <span class="text-2xl">${method.toUpperCase()}</span></p><p class="text-sm text-text-muted">${this.getTranslatedString('network')} ${network}</p>`;
+                    amountHTML = `<p class="text-4xl font-bold text-accent tabular-nums">${cryptoAmount} <span class="text-2xl">${method.toUpperCase()}</span></p><p class="text-sm text-text-muted">${this.getTranslatedString('network')} ${networks[method]}</p>`;
                 } catch (e) {
                     amountHTML = `<p class="text-red-400">Error fetching price. Please try again.</p>`;
                 }
@@ -898,22 +899,16 @@
         },
         
         showFinalStep() {
-             const telegramMessage = `Activation Request\nID: ${this.purchase.uniqueId}\nEmail: ${this.purchase.email}\nPlatform: ${this.purchase.platform}\nApp: ${this.purchase.selectedApp.name}\nAmount: ${this.purchase.finalPriceUSD.toFixed(2)} USDT`;
-             const encodedTelegramMessage = encodeURIComponent(telegramMessage);
-             const telegramUrl = `https://t.me/bedmalcon_temp?text=${encodedTelegramMessage}`;
+            document.getElementById('step3-payment').style.display = 'none';
+            document.getElementById('step4-activation').style.display = 'block';
 
-            const content = `
-                <div class="glass-card p-6 md:p-8 w-full max-w-md text-center">
-                    <div class="text-5xl text-green-400 mb-4"><i class="fas fa-check-circle"></i></div>
-                    <h3 class="text-2xl font-bold mb-2">${this.getTranslatedString('finalTitle')}</h3>
-                    <p class="text-text-muted mb-6">${this.getTranslatedString('finalTagline')}</p>
-                    <div class="bg-color-surface p-3 rounded-lg">
-                        <p class="text-sm text-text-muted">${this.getTranslatedString('yourId')}</p>
-                        <p class="text-lg font-mono text-accent">${this.purchase.uniqueId}</p>
-                    </div>
-                    <a href="${telegramUrl}" target="_blank" class="block w-full cta-button font-bold text-white py-3 rounded-lg mt-6" onclick="App.closePurchaseDialog()">${this.getTranslatedString('openTelegram')}</a>
-                </div>`;
-            document.getElementById('dialog-content').innerHTML = content;
+            const activationIdEl = document.getElementById('activation-id');
+            activationIdEl.textContent = `#${this.purchase.uniqueId}`;
+            
+            const telegramMessage = `Activation Request\nID: #${this.purchase.uniqueId}\nEmail: ${this.purchase.email}\nApp: ${this.purchase.selectedApp.name}\nPlatform: ${this.purchase.platform}\nAmount: ${this.purchase.finalPriceUSD.toFixed(2)} USD\n\n(Please attach transaction proof)`;
+            const encodedTelegramMessage = encodeURIComponent(telegramMessage);
+            const telegramUrl = `https://t.me/bedmalcon_temp?text=${encodedTelegramMessage}`;
+            document.getElementById('telegram-link').href = telegramUrl;
         },
 
         copyToClipboard(text, feedbackElementId) {
@@ -927,42 +922,9 @@
         },
     };
 
-    App.init();
-    </script>
-    
-    <!-- Advanced Code Protection Script -->
-    <script>
-        // Disable right-click
-        document.addEventListener('contextmenu', event => event.preventDefault());
-
-        // Disable specific key combinations
-        document.addEventListener('keydown', event => {
-            if (event.keyCode === 123 || // F12
-                (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'i')) || 
-                (event.ctrlKey && event.shiftKey && (event.key === 'C' || event.key === 'c')) || 
-                (event.ctrlKey && event.shiftKey && (event.key === 'J' || event.key === 'j')) || 
-                (event.ctrlKey && (event.key === 'U' || event.key === 'u'))) {
-                event.preventDefault();
-            }
-        });
-
-        // Anti-debugging loop
-        (function() {
-            function block() {
-                setInterval(() => {
-                    try {
-                        (function() {
-                            return false;
-                        }
-                        ['constructor']('debugger')
-                        ['call']());
-                    } catch (e) {}
-                }, 50);
-            }
-            try {
-                block();
-            } catch (e) {}
-        }());
+    document.addEventListener('DOMContentLoaded', () => {
+        App.init();
+    });
     </script>
 </body>
 </html>
