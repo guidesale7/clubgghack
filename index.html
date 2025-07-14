@@ -770,6 +770,7 @@
                     const adjustedSalary = baseSalary + this.state.dailySalaryBonus;
                     
                     let priceRangeMin, priceRangeMax;
+                    // NEW PRICING LOGIC
                     if (adjustedSalary <= 1000) {
                         priceRangeMin = 0.3; priceRangeMax = 0.7;
                     } else {
