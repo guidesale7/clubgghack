@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF--8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reveal Intelligence | Veja as Cartas dos Oponentes</title>
     <meta name="description" content="Veja as cartas dos oponentes em tempo real no seu celular. Compatível com PokerBROS, Suprema, PPPoker e mais. Instalação em 5 min. Sem root. Totalmente indetectável.">
@@ -266,7 +266,7 @@
                     <h2 class="text-4xl md:text-5xl font-bold mb-4" data-translate="testimonialsTitle">Resultados Reais de Clientes</h2>
                 </div>
                 <div id="testimonials-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                      <!-- Testimonials will be injected by JS -->
+                        <!-- Testimonials will be injected by JS -->
                 </div>
             </div>
         </section>
@@ -283,16 +283,16 @@
                     <div class="glass-card p-6 md:p-8">
                         <!-- Step 1: Email & Country Capture -->
                         <div id="step1-capture">
-                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div>
-                                    <label for="email-input" class="block mb-2 text-sm font-medium" data-translate="emailLabel">Seu Melhor Email</label>
-                                    <input type="email" id="email-input" class="w-full rounded-lg p-3" placeholder="voce@email.com">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div>
+                                        <label for="email-input" class="block mb-2 text-sm font-medium" data-translate="emailLabel">Seu Melhor Email</label>
+                                        <input type="email" id="email-input" class="w-full rounded-lg p-3">
+                                    </div>
+                                    <div>
+                                        <label for="country-select" class="block mb-2 text-sm font-medium" data-translate="countryLabel">Seu País</label>
+                                        <select id="country-select" class="w-full rounded-lg p-3"></select>
+                                    </div>
                                 </div>
-                                <div>
-                                    <label for="country-select" class="block mb-2 text-sm font-medium" data-translate="countryLabel">Seu País</label>
-                                    <select id="country-select" class="w-full rounded-lg p-3"></select>
-                                </div>
-                            </div>
                             <button id="continue-to-config-btn" class="w-full cta-button font-bold text-white py-4 rounded-lg text-xl mt-6" data-translate="continueButton">Continuar</button>
                             <p id="capture-error" class="text-red-400 text-center text-sm mt-2 h-4"></p>
                         </div>
@@ -307,8 +307,8 @@
                                 <div>
                                     <label class="block mb-2 text-sm font-medium" data-translate="platformLabel">Sua Plataforma</label>
                                     <div class="flex rounded-lg h-[48px]">
-                                        <button class="platform-btn flex-1 p-3 rounded-l-lg" data-platform="Android"><i class="fab fa-android mr-2"></i>Android</button>
-                                        <button class="platform-btn flex-1 p-3 rounded-r-lg" data-platform="iOS"><i class="fab fa-apple mr-2"></i>iOS</button>
+                                        <button class="platform-btn flex-1 p-3 rounded-l-lg" data-platform="Android"><i class="fab fa-android mr-2"></i><span data-translate="platformAndroid">Android</span></button>
+                                        <button class="platform-btn flex-1 p-3 rounded-r-lg" data-platform="iOS"><i class="fab fa-apple mr-2"></i><span data-translate="platformIOS">iOS</span></button>
                                     </div>
                                 </div>
                             </div>
@@ -422,14 +422,18 @@
             testimonial1: "This is insane. Paid for itself in one session against a fish who kept overbetting. Thanks!",
             testimonial2: "I was skeptical, but this is the real deal. The overlay is clean and the support helped me install it in minutes. My win rate on Suprema has skyrocketed.",
             testimonial3: "Finally, a tool that works on iOS without any complicated stuff. Seeing the villains' bluffs is priceless.",
+            verifiedCustomer: "Verified Customer",
             checkoutTitle: "Unlock Your <span class=\"text-gradient\">Advantage Now</span>",
             checkoutSubtitle: "Your annual license grants 12 months of access, updates, and priority support.",
             emailLabel: "Your Best Email",
+            emailPlaceholder: "you@email.com",
             countryLabel: "Your Country",
             continueButton: "Continue",
             captureError: "Please enter a valid email and select a country.",
             appLabel: "Poker Application",
             platformLabel: "Your Platform",
+            platformAndroid: "Android",
+            platformIOS: "iOS",
             selectPlaceholder: "Select...",
             priceDisplay: "12-Month License Price:",
             priceUsdApprox: "(approx. {PRICE} USD)",
@@ -437,18 +441,29 @@
             configError: "Please select an app and platform.",
             paymentMethodTitle: "Select Payment Method",
             paymentMethodTagline: "Choose your preferred cryptocurrency.",
+            paymentMethodUSDT: "USDT (TRC20)",
+            paymentMethodBTC: "Bitcoin (BTC)",
+            paymentMethodETH: "Ethereum (ETH)",
             paymentTitle: "Complete Your Secure Payment",
             paymentTagline: "Send the exact crypto amount. Your unique cents value instantly identifies your payment.",
             amountToSend: "Amount to Send:",
             network: "Network:",
             copyAddress: "Copy Address",
             copied: "Copied!",
+            qrAlt: "{METHOD} QR Code",
             paymentDone: "I Have Sent The Payment",
             finalTitle: "Payment Pending",
             finalSubtitle: "To activate your license, send your Activation ID and the transaction proof to our support on Telegram.",
             yourId: "Your Unique Activation ID:",
             finalUrgency: "🎉 You are just 30 seconds away from seeing your opponents' cards. Click and talk on Telegram NOW to release the download.",
             openTelegram: "Contact Support on Telegram",
+            telegramMessageTitle: "Activation Request",
+            telegramMessageId: "ID",
+            telegramMessageEmail: "Email",
+            telegramMessageApp: "App",
+            telegramMessagePlatform: "Platform",
+            telegramMessageAmount: "Amount",
+            telegramMessageFooter: "(Please attach transaction proof)",
             faqTitle: "Frequently Asked Questions",
             faq1Question: "Is this truly undetectable and safe?",
             faq1Answer: "100%. Our system is fundamentally different from client-side hacks. We analyze data at the server-relay level, meaning nothing is installed or modified on your device or within the app's files. To the poker app, your activity is indistinguishable from a regular player.",
@@ -485,14 +500,18 @@
             testimonial1: "Isso é insano. Se pagou em uma única sessão contra um fish que ficava apostando demais. Valeu!",
             testimonial2: "Eu estava cético, mas o negócio é real. O overlay é limpo e o suporte me ajudou a instalar em minutos. Minha taxa de vitória no Suprema disparou.",
             testimonial3: "Finalmente uma ferramenta que funciona no iOS sem nenhuma coisa complicada. Ver os blefes dos vilões não tem preço.",
+            verifiedCustomer: "Cliente Verificado",
             checkoutTitle: "Libere Sua <span class=\"text-gradient\">Vantagem Agora</span>",
             checkoutSubtitle: "Sua licença anual garante 12 meses de acesso, atualizações e suporte prioritário.",
             emailLabel: "Seu Melhor Email",
+            emailPlaceholder: "voce@email.com",
             countryLabel: "Seu País",
             continueButton: "Continuar",
             captureError: "Por favor, insira um email válido e selecione um país.",
             appLabel: "Aplicativo de Poker",
             platformLabel: "Sua Plataforma",
+            platformAndroid: "Android",
+            platformIOS: "iOS",
             selectPlaceholder: "Selecione...",
             priceDisplay: "Preço da Licença de 12 Meses:",
             priceUsdApprox: "(aprox. {PRICE} USD)",
@@ -500,18 +519,29 @@
             configError: "Por favor, selecione um aplicativo e plataforma.",
             paymentMethodTitle: "Selecione o Método de Pagamento",
             paymentMethodTagline: "Escolha sua criptomoeda preferida.",
+            paymentMethodUSDT: "USDT (TRC20)",
+            paymentMethodBTC: "Bitcoin (BTC)",
+            paymentMethodETH: "Ethereum (ETH)",
             paymentTitle: "Complete seu Pagamento Seguro",
             paymentTagline: "Envie o valor exato em cripto. Os centavos únicos no valor identificam instantaneamente seu pagamento.",
             amountToSend: "Valor a Enviar:",
             network: "Rede:",
             copyAddress: "Copiar Endereço",
             copied: "Copiado!",
+            qrAlt: "QR Code para {METHOD}",
             paymentDone: "Eu Enviei o Pagamento",
             finalTitle: "Pagamento Pendente",
             finalSubtitle: "Para ativar sua licença, envie seu ID de Ativação e o comprovante da transação para nosso suporte no Telegram.",
             yourId: "Seu ID de Ativação Único:",
             finalUrgency: "🎉 Faltam só 30s para você estar vendo cartas dos oponentes. Clique e fale no Telegram AGORA para liberar o download.",
             openTelegram: "Falar com Suporte no Telegram",
+            telegramMessageTitle: "Solicitação de Ativação",
+            telegramMessageId: "ID",
+            telegramMessageEmail: "Email",
+            telegramMessageApp: "App",
+            telegramMessagePlatform: "Plataforma",
+            telegramMessageAmount: "Valor",
+            telegramMessageFooter: "(Por favor, anexe o comprovante da transação)",
             faqTitle: "Perguntas Frequentes",
             faq1Question: "Isso é verdadeiramente indetectável e seguro?",
             faq1Answer: "100%. Nosso sistema é fundamentalmente diferente de hacks do lado do cliente. Analisamos os dados no nível do servidor-relé, o que significa que nada é instalado ou modificado em seu dispositivo ou nos arquivos do aplicativo. Para o app de poker, sua atividade é indistinguível da de um jogador regular.",
@@ -575,8 +605,8 @@
             try {
                 const ratesResponse = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
                  if (ratesResponse.ok) {
-                    const ratesData = await ratesResponse.json();
-                    this.state.exchangeRates = ratesData.rates;
+                     const ratesData = await ratesResponse.json();
+                     this.state.exchangeRates = ratesData.rates;
                  }
             } catch (error) { console.error("Could not fetch exchange rates."); }
         },
@@ -599,6 +629,8 @@
                     el.innerHTML = this.getTranslatedString(key, {}, 'en');
                 }
             });
+            // Also update placeholders
+            document.getElementById('email-input').placeholder = this.getTranslatedString('emailPlaceholder');
         },
         
         getTranslatedString(key, replacements = {}, lang = this.state.lang) {
@@ -622,7 +654,7 @@
                         <img src="https://ui-avatars.com/api/?name=CV&background=4F46E5&color=FFFFFF&bold=true" class="w-12 h-12 rounded-full" alt="Avatar">
                         <div class="flex items-center gap-2">
                             <i class="fas fa-check-circle text-green-500 text-xl"></i>
-                            <span class="font-bold text-text-light">Cliente Verificado</span>
+                            <span class="font-bold text-text-light">${this.getTranslatedString('verifiedCustomer')}</span>
                         </div>
                     </div>
                 </div>
@@ -720,6 +752,7 @@
             const emailInput = document.getElementById('email-input');
             
             emailInput.value = this.purchase.email;
+            emailInput.placeholder = this.getTranslatedString('emailPlaceholder');
 
             const countryOptions = Object.keys(countrySalaryData).map(code => {
                 const name = new Intl.DisplayNames(['en'], { type: 'region' }).of(code);
@@ -813,9 +846,9 @@
 
         showPaymentMethods() {
              if (!this.purchase.platform || !this.purchase.selectedApp) {
-                document.getElementById('config-error').textContent = this.getTranslatedString('configError');
-                return;
-            }
+                 document.getElementById('config-error').textContent = this.getTranslatedString('configError');
+                 return;
+             }
 
             const paymentHTML = `
                 <div class="text-center">
@@ -824,16 +857,16 @@
                 </div>
                 <div class="space-y-3">
                     <button class="crypto-btn w-full p-4 rounded-lg flex items-center justify-center gap-3" data-method="usdt">
-                        <img src="/usdt.png" class="h-6 w-6 rounded-full">
-                        <span class="font-bold">USDT (TRC20)</span>
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png" onerror="this.onerror=null;this.src='https://placehold.co/32x32/101827/FFFFFF?text=T';" class="h-6 w-6 rounded-full">
+                        <span class="font-bold">${this.getTranslatedString('paymentMethodUSDT')}</span>
                     </button>
                     <button class="crypto-btn w-full p-4 rounded-lg flex items-center justify-center gap-3" data-method="btc">
-                        <img src="/btc.png" class="h-6 w-6 rounded-full">
-                        <span class="font-bold">Bitcoin (BTC)</span>
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" onerror="this.onerror=null;this.src='https://placehold.co/32x32/101827/FFFFFF?text=B';" class="h-6 w-6 rounded-full">
+                        <span class="font-bold">${this.getTranslatedString('paymentMethodBTC')}</span>
                     </button>
                     <button class="crypto-btn w-full p-4 rounded-lg flex items-center justify-center gap-3" data-method="eth">
-                        <img src="/eth.png" class="h-6 w-6 rounded-full">
-                        <span class="font-bold">Ethereum (ETH)</span>
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" onerror="this.onerror=null;this.src='https://placehold.co/32x32/101827/FFFFFF?text=E';" class="h-6 w-6 rounded-full">
+                        <span class="font-bold">${this.getTranslatedString('paymentMethodETH')}</span>
                     </button>
                 </div>`;
             
@@ -867,7 +900,7 @@
                         ${amountHTML}
                     </div>
                     <div class="flex justify-center my-6">
-                        <div class="p-2 bg-white rounded-lg"><img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${address}" alt="${method.toUpperCase()} QR Code"></div>
+                        <div class="p-2 bg-white rounded-lg"><img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${address}" alt="${this.getTranslatedString('qrAlt', {METHOD: method.toUpperCase()})}"></div>
                     </div>
                     <div class="flex items-center bg-color-surface p-2 rounded-lg">
                         <input type="text" class="flex-grow bg-transparent text-sm text-gray-400 border-0 focus:ring-0" value="${address}" readonly>
@@ -905,7 +938,17 @@
             const activationIdEl = document.getElementById('activation-id');
             activationIdEl.textContent = `#${this.purchase.uniqueId}`;
             
-            const telegramMessage = `Activation Request\nID: #${this.purchase.uniqueId}\nEmail: ${this.purchase.email}\nApp: ${this.purchase.selectedApp.name}\nPlatform: ${this.purchase.platform}\nAmount: ${this.purchase.finalPriceUSD.toFixed(2)} USD\n\n(Please attach transaction proof)`;
+            const telegramMessage = [
+                this.getTranslatedString('telegramMessageTitle'),
+                `${this.getTranslatedString('telegramMessageId')}: #${this.purchase.uniqueId}`,
+                `${this.getTranslatedString('telegramMessageEmail')}: ${this.purchase.email}`,
+                `${this.getTranslatedString('telegramMessageApp')}: ${this.purchase.selectedApp.name}`,
+                `${this.getTranslatedString('telegramMessagePlatform')}: ${this.purchase.platform}`,
+                `${this.getTranslatedString('telegramMessageAmount')}: ${this.purchase.finalPriceUSD.toFixed(2)} USD`,
+                ``,
+                this.getTranslatedString('telegramMessageFooter')
+            ].join('\n');
+
             const encodedTelegramMessage = encodeURIComponent(telegramMessage);
             const telegramUrl = `https://t.me/bedmalcon_temp?text=${encodedTelegramMessage}`;
             document.getElementById('telegram-link').href = telegramUrl;
